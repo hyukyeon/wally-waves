@@ -1,0 +1,101 @@
+.include "common/report.inc"
+
+# t08_rvc: 같은 계산을 32비트 명령(일반)과 16비트 압축 명령(C)으로 한다.
+#   구간 A: addi a0, a0, k          (32비트, .option norvc 로 고정)   k = 1..8
+#   구간 B: c.addi a0, k            (16비트)                          k = 1..8
+# 두 구간 모두 a0 에 1+2+...+8 = 36 을 더한다.
+# 각 구간을 두 번 실행하고 두 번째 실행만 잰다 (첫 번째는 I$ 를 데운다: 콜드 미스 제거).
+# 측정: 구간 사이클(cycle), 구간 명령 수(instret), 구간 코드 크기(바이트)
+# 검사: 두 결과가 36 이고, 코드 크기는 A 32바이트, B 16바이트 이어야 한다.
+
+.section .text.init
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  # ---- 구간 A: 32비트 명령 ----
+  .option push
+  .option norvc
+  li t6, 2                        # 두 번 실행 (첫 번째는 워밍업)
+  la s4, secA_start               # 주소는 측정 구간 밖에서 미리 구한다
+  la s5, secA_end
+secA_loop:
+  li a0, 0
+  csrr s0, cycle
+  csrr s2, instret
+secA_start:
+  addi a0, a0, 1
+  addi a0, a0, 2
+  addi a0, a0, 3
+  addi a0, a0, 4
+  addi a0, a0, 5
+  addi a0, a0, 6
+  addi a0, a0, 7
+  addi a0, a0, 8
+secA_end:
+  csrr s1, cycle
+  csrr s3, instret
+  addi t6, t6, -1
+  bnez t6, secA_loop
+  .option pop
+  mv s6, a0                       # A 의 결과 (마지막 실행)
+  sub s7, s5, s4                  # A 의 코드 크기 (바이트)
+  sub s8, s1, s0                  # A 의 사이클 (마지막 실행)
+  sub s9, s3, s2                  # A 의 명령 수 (마지막 실행)
+
+  # ---- 구간 B: 16비트 압축 명령 ----
+  li t6, 2
+  la s4, secB_start
+  la s5, secB_end
+secB_loop:
+  li a0, 0
+  csrr s0, cycle
+  csrr s2, instret
+secB_start:
+  c.addi a0, 1
+  c.addi a0, 2
+  c.addi a0, 3
+  c.addi a0, 4
+  c.addi a0, 5
+  c.addi a0, 6
+  c.addi a0, 7
+  c.addi a0, 8
+secB_end:
+  csrr s1, cycle
+  csrr s3, instret
+  addi t6, t6, -1
+  bnez t6, secB_loop
+  mv s10, a0                      # B 의 결과
+  sub s11, s5, s4                 # B 의 코드 크기 (바이트)
+  sub s4, s1, s0                  # B 의 사이클 (마지막 실행). REPORT 가 t4 를 쓰므로 s4 에 둔다
+  sub s0, s3, s2                  # B 의 명령 수 (마지막 실행)
+
+  # 보고: REPORT 가 t0 를 쓰므로 값은 t3 로 옮겨서 넘긴다
+  mv t3, s6
+  REPORT_U64 result_32bit, t3
+  mv t3, s10
+  REPORT_U64 result_16bit, t3
+  mv t3, s7
+  REPORT_U64 bytes_32bit, t3
+  mv t3, s11
+  REPORT_U64 bytes_16bit, t3
+  mv t3, s8
+  REPORT_U64 cycles_32bit, t3
+  mv t3, s4
+  REPORT_U64 cycles_16bit, t3
+  mv t3, s9
+  REPORT_U64 instret_32bit, t3
+  mv t3, s0
+  REPORT_U64 instret_16bit, t3
+
+  # 검사: 결과 36, 코드 크기는 A 32바이트, B 16바이트
+  li t5, 36
+  bne s6, t5, fail
+  bne s10, t5, fail
+  li t5, 32
+  bne s7, t5, fail
+  li t5, 16
+  bne s11, t5, fail
+  TEST_PASS t08_rvc
+fail:
+  TEST_FAIL t08_rvc

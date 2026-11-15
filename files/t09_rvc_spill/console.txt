@@ -1,0 +1,16 @@
+Config=rv64gc test=t09_rvc_spill_t09_rvc_spill elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t09_rvc_spill_t09_rvc_spill
+Running 1 test 
+REPORT result_X=2000
+REPORT result_Y=2000
+REPORT addr_offset_X=62
+REPORT addr_offset_Y=60
+REPORT cycles_X=32
+REPORT cycles_Y=31
+PASS t09_rvc_spill
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t09_rvc_spill/t09_rvc_spill.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 32ns; walltime 0.742 s; speed 43.603 ns/s
+- Verilator: cpu 0.651 s on 1 threads; allocated 266 MB

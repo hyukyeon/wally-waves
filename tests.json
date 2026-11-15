@@ -1,7 +1,7 @@
 [
  {
   "name": "t01_pipeline",
-  "stem": "t01_pipeline",
+  "stem": "ch07-1",
   "variant": "",
   "title": "데이터 해저드, 포워딩, load-use 정지",
   "result": "PASS",
@@ -36,7 +36,7 @@
  },
  {
   "name": "t02_branch",
-  "stem": "t02_branch",
+  "stem": "ch13-1",
   "variant": "",
   "title": "분기 예측 hit/miss 패널티 (mcycle)",
   "result": "PASS",
@@ -65,7 +65,7 @@
  },
  {
   "name": "t03_trap",
-  "stem": "t03_trap",
+  "stem": "ch08-1",
   "variant": "",
   "title": "ecall, 불법 명령 트랩 (direct/vectored)",
   "result": "PASS",
@@ -94,7 +94,7 @@
  },
  {
   "name": "t04_interrupt",
-  "stem": "t04_interrupt",
+  "stem": "ch08-2",
   "variant": "",
   "title": "CLINT 타이머 인터럽트와 WFI",
   "result": "PASS",
@@ -129,7 +129,7 @@
  },
  {
   "name": "t05_zicond_zb",
-  "stem": "t05_zicond_zb",
+  "stem": "ch18-1",
   "variant": "",
   "title": "Zicond, Zba/Zbb 명령",
   "result": "PASS",
@@ -163,7 +163,7 @@
  },
  {
   "name": "t06_mmu",
-  "stem": "t06_mmu",
+  "stem": "ch11-1",
   "variant": "",
   "title": "Sv39 페이지 테이블과 페이지 폴트",
   "result": "PASS",
@@ -192,7 +192,7 @@
  },
  {
   "name": "t07_cbo",
-  "stem": "t07_cbo",
+  "stem": "ch10-1",
   "variant": "",
   "title": "Zicbom/Zicboz 캐시 블록 명령",
   "result": "PASS",
@@ -210,6 +210,82 @@
      1
     ],
     "desc": "cbo.clean / cbo.flush — 캐시 블록 명령이 DCacheMiss 를 올리고, 실행 동안 StallM 이 유지된다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t08_rvc",
+  "stem": "ch14-1",
+  "variant": "",
+  "title": "압축 명령(RVC): 같은 계산을 32비트와 16비트로",
+  "result": "PASS",
+  "fst_size": 1026660,
+  "vcd_size": null,
+  "mtime": 1794749396,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "압축 디코드 / PC 증가",
+   "I$ 미스 / 정지"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "32비트 명령 구간 (두 번째 실행) — addi 8개: PC 가 +4 씩 증가, 명령마다 한 사이클"
+   },
+   {
+    "ns": [
+     2
+    ],
+    "desc": "16비트 압축 명령 구간 (두 번째 실행) — c.addi 8개: PC 가 +2 씩 증가, 같은 8번의 덧셈이 절반 바이트로"
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t09_rvc_spill",
+  "stem": "ch14-2",
+  "variant": "",
+  "title": "압축 명령 섞임: 32비트 명령이 캐시 라인 경계에 걸침",
+  "result": "PASS",
+  "fst_size": 917511,
+  "vcd_size": null,
+  "mtime": 1794749430,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "압축 디코드 / PC 증가",
+   "스필 (라인 경계)"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "스필: 첫 실행 (I$ 콜드 미스) — addi 가 라인 경계(오프셋 62)에 걸쳐 TakeSpillF, SelSpillF, IFUCacheBusStallF 가 올라감"
+   },
+   {
+    "ns": [
+     2
+    ],
+    "desc": "걸친 addi (두 번째 실행) — 오프셋 62 의 addi: 두 번째 실행의 흐름"
+   },
+   {
+    "ns": [
+     3
+    ],
+    "desc": "걸치지 않은 addi (두 번째 실행) — 오프셋 60 의 addi: 라인 안에 완전히 들어감"
    }
   ],
   "files": [

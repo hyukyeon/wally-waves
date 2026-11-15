@@ -1,0 +1,18 @@
+Config=rv64gc test=t08_rvc_t08_rvc elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t08_rvc_t08_rvc
+Running 1 test 
+REPORT result_32bit=36
+REPORT result_16bit=36
+REPORT bytes_32bit=32
+REPORT bytes_16bit=16
+REPORT cycles_32bit=10
+REPORT cycles_16bit=10
+REPORT instret_32bit=10
+REPORT instret_16bit=10
+PASS t08_rvc
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t08_rvc/t08_rvc.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 40ns; walltime 0.893 s; speed 44.971 ns/s
+- Verilator: cpu 0.802 s on 1 threads; allocated 266 MB
