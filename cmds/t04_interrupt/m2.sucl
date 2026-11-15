@@ -4,6 +4,12 @@ variable_add testbench.clk
 divider_add Pipeline
 variable_add testbench.dut.core.PCM
 variable_add testbench.dut.core.InstrM
+divider_add AHB_APB_CLINT
+variable_add testbench.dut.uncoregen.uncore.HSELBRIDGE
+variable_add testbench.dut.uncoregen.uncore.HSELCLINT
+variable_add testbench.dut.uncoregen.uncore.ahbapbbridge.PSEL
+variable_add testbench.dut.uncoregen.uncore.ahbapbbridge.PENABLE
+variable_add testbench.dut.uncoregen.uncore.ahbapbbridge.PADDR
 divider_add IRQ_inputs
 variable_add testbench.dut.core.MTimerInt
 variable_add testbench.dut.core.MTIME_CLINT

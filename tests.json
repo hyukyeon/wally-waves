@@ -103,6 +103,7 @@
   "mtime": 1791981071,
   "groups": [
    "Pipeline (PC / 명령)",
+   "AHB-APB 브리지 (CLINT 접근)",
    "인터럽트 입력",
    "Trap / WFI"
   ],
@@ -202,7 +203,8 @@
   "groups": [
    "Pipeline (PC / 명령)",
    "버스 (AHB)",
-   "캐시 / 정지"
+   "캐시 / 정지",
+   "캐시 (D$)"
   ],
   "marks": [
    {

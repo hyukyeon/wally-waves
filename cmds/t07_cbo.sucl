@@ -14,3 +14,6 @@ divider_add Cache_stall
 variable_add testbench.dut.core.DCacheMiss
 variable_add testbench.dut.core.DCacheAccess
 variable_add testbench.dut.core.StallM
+divider_add DCache
+variable_add testbench.dut.core.lsu.bus.dcache.dcache.CacheRW
+variable_add testbench.dut.core.lsu.bus.dcache.dcache.CacheCommitted
