@@ -1,0 +1,122 @@
+.include "common/report.inc"
+
+# t15_misc: 기타: CSR, 카운터, fence.i, 정렬되지 않은 접근 (직접 작성)
+# 1) Zicsr: csrrsi, csrr 로 mscratch 의 값을 읽고 쓰고 비트를 세운다.
+# 2) Zicntr: minstret 으로 실행한 명령 수를 센다.
+# 3) Zifencei: 명령을 고친 뒤 fence.i 없이/있이 실행되는 값을 본다.
+# 4) Zicclsm: 8바이트 경계에 걸친 ld/sd 가 바른 값을 주는지, 정렬된 접근과 사이클을 비교한다.
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  # ---- 1. CSR ----
+  li t0, 0x55
+  csrw mscratch, t0
+  csrrsi a1, mscratch, 0x0A    # a1 = 옛 값 0x55, mscratch = 0x55 | 0x0A = 0x5F
+  csrr a2, mscratch            # a2 = 0x5F
+  li t5, 0x55
+  bne a1, t5, fail
+  li t5, 0x5F
+  bne a2, t5, fail
+
+  # ---- 2. 카운터: 명령 수 ----
+  csrr s1, minstret            # 이 읽기 전후 사이에 명령이 몇 개 실행되는지 센다
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  addi t0, t0, 1
+  csrr s2, minstret
+  sub s3, s2, s1               # 기대: 첫 csrr 1개 + addi 10개 = 11
+  li t5, 11
+  bne s3, t5, fail
+
+  # ---- 3. fence.i: 명령을 고친 뒤 실행 ----
+  li a0, 0
+  jal ra, smc_target           # 처음에는 addi a0,a0,1 이 실행되어 a0 = 1
+  li t5, 1
+  bne a0, t5, fail
+  la t0, smc_target
+  li t1, 0x00550513            # addi a0,a0,5 (32비트 인코딩)
+  sw t1, 0(t0)                 # 명령 메모리를 고친다
+  fence.i                      # 명령 캐시와 데이터 쓰기를 맞춘다
+  li a0, 0
+  jal ra, smc_target           # 고친 명령이 실행되어 a0 = 5
+  li t5, 5
+  bne a0, t5, fail
+
+  # ---- 4. 정렬되지 않은 접근 ----
+  la s4, misbuf
+  li t0, 0x1122334455667788
+  sd t0, 1(s4)                 # 8바이트 경계를 넘는 저장 (정렬되지 않음)
+  ld t1, 1(s4)                 # 같은 위치를 같은 방식으로 읽음
+  bne t1, t0, fail
+  lh t2, 3(s4)                 # 리틀엔디언: 주소 3,4 = 0x66, 0x55 -> 0x5566
+  li t5, 0x5566
+  bne t2, t5, fail
+
+  # 정렬된 ld 와 정렬되지 않은 ld 의 사이클 비교 (두 번 돌려 두 번째 값)
+  li t6, 2
+loopT:
+  rdcycle s5
+  rdcycle s6
+  sub s7, s6, s5               # 기준
+
+  rdcycle s5
+  ld a0, 0(s4)
+  ld a1, 0(s4)
+  ld a2, 0(s4)
+  ld a3, 0(s4)
+  ld a4, 0(s4)
+  ld a5, 0(s4)
+  ld a6, 0(s4)
+  ld a7, 0(s4)
+  rdcycle s6
+  sub s8, s6, s5               # 정렬된 ld 8개
+
+  rdcycle s5
+  ld a0, 1(s4)
+  ld a1, 1(s4)
+  ld a2, 1(s4)
+  ld a3, 1(s4)
+  ld a4, 1(s4)
+  ld a5, 1(s4)
+  ld a6, 1(s4)
+  ld a7, 1(s4)
+  rdcycle s6
+  sub s9, s6, s5               # 정렬되지 않은 ld 8개
+
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  mv t3, s7
+  REPORT_U64 cycles_base, t3
+  mv t3, s8
+  REPORT_U64 cycles_ld8_aligned, t3
+  mv t3, s9
+  REPORT_U64 cycles_ld8_misaligned, t3
+  mv t3, s3
+  REPORT_U64 instret_delta, t3
+
+  TEST_PASS t15_misc
+fail:
+  TEST_FAIL t15_misc
+
+# 고쳐 쓸 함수 (명령 메모리에 있으므로 fence.i 가 필요하다)
+.align 2
+smc_target:
+  addi a0, a0, 1
+  ret
+
+.section .bss
+.align 4
+misbuf:
+  .space 32

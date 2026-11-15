@@ -1,0 +1,130 @@
+.include "common/report.inc"
+
+# t16_periph: 주변장치: UART, GPIO, PLIC, CLINT 레지스터와 접근 사이클 (직접 작성)
+# 1) UART (16550 계열, 0x10000000): LCR, SCR 읽고 쓰기, LSR 의 THRE/TEMT 비트.
+# 3) PLIC (0x0C000000): 우선순위, 활성화, 임계값 읽고 쓰기.
+# 4) CLINT (0x02000000): mtime 이 흐르는지, mtimecmp 를 읽고 쓰는지.
+# 5) 사이클: 같은 개수의 바이트 로드를 UART 레지스터와 DRAM 에서 각각 8번 잰다.
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  # ---- 1. UART ----
+  li s1, 0x10000000
+  li t0, 0x03
+  sb t0, 3(s1)                 # LCR = 0x03 (8비트 문자)
+  lbu a0, 3(s1)
+  li t5, 0x03
+  bne a0, t5, fail
+
+  li t0, 0xA5
+  sb t0, 7(s1)                 # SCR (스크래치) = 0xA5
+  lbu a1, 7(s1)
+  li t5, 0xA5
+  bne a1, t5, fail
+
+  lbu a2, 5(s1)                # LSR: 송신 비어 있음(THRE, bit5), 송신기 비어 있음(TEMT, bit6)
+  andi a2, a2, 0x60
+  li t5, 0x60
+  bne a2, t5, fail
+
+  # GPIO(0x10060000)는 QEMU virt 에 없으므로 이 공통 테스트에서 검사하지 않는다 (Wally 전용, 20장 본문 참고).
+
+  # ---- 3. PLIC ----
+  li s3, 0x0C000000
+  li t0, 5
+  sw t0, 4(s3)                 # 소스 1 의 우선순위 = 5
+  lw a5, 4(s3)
+  li t5, 5
+  bne a5, t5, fail
+
+  li t0, 0x2
+  li t1, 0x2000
+  add t1, s3, t1
+  sw t0, 0(t1)                 # 컨텍스트 0 에서 소스 1 활성화 (비트 1)
+  lw a6, 0(t1)
+  li t5, 0x2
+  bne a6, t5, fail
+
+  li t0, 3
+  li t1, 0x200000
+  add t1, s3, t1
+  sw t0, 0(t1)                 # 컨텍스트 0 의 임계값 = 3
+  lw a7, 0(t1)
+  li t5, 3
+  bne a7, t5, fail
+
+  # ---- 4. CLINT ----
+  li s4, 0x02000000
+  li t1, 0xBFF8
+  add t1, s4, t1
+  ld s5, 0(t1)                 # mtime 첫 읽기
+  li t0, 200
+1:
+  addi t0, t0, -1
+  bnez t0, 1b                  # 잠깐 기다림
+  ld s6, 0(t1)                 # mtime 두 번째 읽기
+  bgeu s5, s6, fail            # mtime 은 흘러야 한다 (s6 > s5)
+
+  li t1, 0x4000
+  add t1, s4, t1
+  li t0, 0x123456
+  sd t0, 0(t1)                 # mtimecmp = 0x123456
+  ld s7, 0(t1)
+  li t5, 0x123456
+  bne s7, t5, fail
+
+  # ---- 5. 접근 사이클 ----
+  li s8, 0x10000007            # UART SCR 주소
+  la s9, misbuf                # DRAM 주소 (같은 바이트 로드)
+  li t6, 2
+loopT:
+  rdcycle s0
+  rdcycle s1
+  sub s10, s1, s0              # 기준
+
+  rdcycle s0
+  lbu a0, 0(s8)
+  lbu a1, 0(s8)
+  lbu a2, 0(s8)
+  lbu a3, 0(s8)
+  lbu a4, 0(s8)
+  lbu a5, 0(s8)
+  lbu a6, 0(s8)
+  lbu a7, 0(s8)
+  rdcycle s1
+  sub s11, s1, s0              # UART SCR 로드 8개
+
+  rdcycle s0
+  lbu a0, 0(s9)
+  lbu a1, 0(s9)
+  lbu a2, 0(s9)
+  lbu a3, 0(s9)
+  lbu a4, 0(s9)
+  lbu a5, 0(s9)
+  lbu a6, 0(s9)
+  lbu a7, 0(s9)
+  rdcycle s1
+  sub s2, s1, s0               # DRAM 로드 8개
+
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  mv t3, s10
+  REPORT_U64 cycles_base, t3
+  mv t3, s11
+  REPORT_U64 cycles_uart_lbu8, t3
+  mv t3, s2
+  REPORT_U64 cycles_dram_lbu8, t3
+
+  TEST_PASS t16_periph
+fail:
+  TEST_FAIL t16_periph
+
+.section .bss
+.align 4
+misbuf:
+  .space 16

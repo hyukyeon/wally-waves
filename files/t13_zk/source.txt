@@ -56,18 +56,39 @@ rvtest_entry_point:
   bne a6, t5, fail
   li t5, 1
   bne s4, t5, fail
-  li t5, 0xFFFFFFFF
-  and t3, a7, t5
+  # RV64 SHA-256: 하위 32비트를 쓰고 결과를 부호 확장한다 (명세 scalar-crypto 31.1.3.27-30)
   li t5, 0x3D5DCC4C
-  bne t3, t5, fail
-  li t5, 0xFFFFFFFF
-  and t3, s1, t5
-  li t5, 0xD6316D8A
-  bne t3, t5, fail
+  bne a7, t5, fail                # sig0 결과의 최상위 비트가 0 이므로 부호 확장해도 같다
+  li t5, 0xFFFFFFFFD6316D8A
+  bne s1, t5, fail                # sum1 결과의 최상위 비트가 1 이므로 상위 32비트가 1
   li t5, 0xB7C57A100C7EC1AB
   bne s2, t5, fail
   li t5, 0x70A3460DBBD4317A
   bne s3, t5, fail
+
+  # ---- 5b. Zbb (명세 정의, 파이썬 계산) ----
+  clz  s11, t0                 # 7
+  ctz  s0, t0                  # 0
+  cpop s9, t0                  # 32
+  rev8 s8, t0                  # 0xEFCDAB8967452301
+  li t2, 0x0001000000FF0000    # Z
+  orc.b s7, t2                 # 0xFF000000FF0000 (0이 아닌 바이트는 FF, 0인 바이트는 00)
+  clz  s6, t2                  # 15
+  ctz  s5, t2                  # 16
+  li t5, 7
+  bne s11, t5, fail
+  li t5, 0
+  bne s0, t5, fail
+  li t5, 32
+  bne s9, t5, fail
+  li t5, 0xEFCDAB8967452301
+  bne s8, t5, fail
+  li t5, 0x00FF000000FF0000
+  bne s7, t5, fail
+  li t5, 15
+  bne s6, t5, fail
+  li t5, 16
+  bne s5, t5, fail
 
   # ---- 6. 사이클 측정 (두 번 돌린다) ----
   li t6, 2

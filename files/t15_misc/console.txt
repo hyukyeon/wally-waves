@@ -1,0 +1,14 @@
+Config=rv64gc test=t15_misc_t15_misc elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t15_misc_t15_misc
+Running 1 test 
+REPORT cycles_base=1
+REPORT cycles_ld8_aligned=9
+REPORT cycles_ld8_misaligned=9
+REPORT instret_delta=11
+PASS t15_misc
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t15_misc/t15_misc.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 28ns; walltime 0.664 s; speed 42.500 ns/s
+- Verilator: cpu 0.564 s on 1 threads; allocated 266 MB

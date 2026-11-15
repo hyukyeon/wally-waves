@@ -10,5 +10,5 @@ PASS t13_zk
 SUCCESS! All tests ran without failures.
 - /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
 - S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
-- Verilator: $finish at 24ns; walltime 0.598 s; speed 40.920 ns/s
+- Verilator: $finish at 24ns; walltime 0.588 s; speed 40.529 ns/s
 - Verilator: cpu 0.497 s on 1 threads; allocated 266 MB

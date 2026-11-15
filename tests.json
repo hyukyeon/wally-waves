@@ -365,11 +365,93 @@
   "variant": "",
   "title": "Zb/Zk: 비트 조작과 암호 명령",
   "result": "PASS",
-  "fst_size": 902936,
+  "fst_size": 913778,
   "vcd_size": null,
-  "mtime": 1794752914,
+  "mtime": 1794754206,
   "groups": [
    "Pipeline (PC / 명령)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t14_aes",
+  "stem": "t14_aes",
+  "variant": "",
+  "title": "Zkne/Zknd: AES-128 암호화 (FIPS-197 벡터)",
+  "result": "PASS",
+  "fst_size": 949439,
+  "vcd_size": null,
+  "mtime": 1794754174,
+  "groups": [
+   "Pipeline (PC / 명령)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t15_misc",
+  "stem": "t15_misc",
+  "variant": "",
+  "title": "기타: CSR, 카운터, fence.i, 정렬되지 않은 접근",
+  "result": "PASS",
+  "fst_size": 842115,
+  "vcd_size": null,
+  "mtime": 1794754294,
+  "groups": [
+   "Pipeline (PC / 명령)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t16_periph",
+  "stem": "t16_periph",
+  "variant": "",
+  "title": "주변장치: UART, GPIO, PLIC, CLINT 레지스터와 접근 사이클",
+  "result": "PASS",
+  "fst_size": 764361,
+  "vcd_size": null,
+  "mtime": 1794754635,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "AHB-APB 브리지 (UART 접근)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t17_bench",
+  "stem": "t17_bench",
+  "variant": "",
+  "title": "벤치마크: 캐시 크기와 분기 예측이 CPI 에 주는 영향",
+  "result": "PASS",
+  "fst_size": 50035372,
+  "vcd_size": null,
+  "mtime": 1794755201,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "분기 예측 실패 / 정지"
   ],
   "marks": [],
   "files": [

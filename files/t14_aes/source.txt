@@ -1,0 +1,130 @@
+.include "common/report.inc"
+
+# t14_aes: Zkne/Zknd: AES-128 암호화 (FIPS-197 부록 C.1 벡터)
+# 명세 의사 코드에 따라 aes64esm/aes64es 로 라운드를 만들고, 라운드 키는 파이썬이 같은 배치로 만든 값을 쓴다.
+# 배치: 열 c 를 레지스터 슬롯 perm[c] 에 두고 각 열의 바이트 순서를 뒤집는다 (파이썬 탐색으로 찾은 배치).
+# 덧붙여 aes64ks1i, aes64ks2 의 결과를 명세 의사 코드로 계산한 값과 비교한다.
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  li t0, 0x30201000f0e0d0c0
+  li t1, 0xb0a0908070605040
+  # round 1
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0xfd74aad6fe76abd6
+  xor t0, t2, t4
+  li t4, 0xf178a6dafa72afd2
+  xor t1, t3, t4
+  # round 2
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0xbcf92b6feb33068
+  xor t0, t2, t4
+  li t4, 0xc59bbef1bd3d64
+  xor t1, t3, t4
+  # round 3
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0x4e74ffb641bf6904
+  xor t0, t2, t4
+  li t4, 0xbf0c596cbfc9c2d2
+  xor t1, t3, t4
+  # round 4
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0xbcf7f747fd8d05fd
+  xor t0, t2, t4
+  li t4, 0xbc326cf9033e3595
+  xor t1, t3, t4
+  # round 5
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0xe8a3aa3caa22f6ad
+  xor t0, t2, t4
+  li t4, 0x57aff350eb9d9fa9
+  xor t1, t3, t4
+  # round 6
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0x7d0f395e6b1fa30a
+  xor t0, t2, t4
+  li t4, 0xc13d55a79692a6f7
+  xor t1, t3, t4
+  # round 7
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0x1a70f91426c0a94e
+  xor t0, t2, t4
+  li t4, 0x4ddf0a448ce25fe3
+  xor t1, t3, t4
+  # round 8
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0x35874347d27abfae
+  xor t0, t2, t4
+  li t4, 0xf4ba16e0b9651ca4
+  xor t1, t3, t4
+  # round 9
+  aes64esm t2, t0, t1
+  aes64esm t3, t1, t0
+  li t4, 0xd13299544e972cbe
+  xor t0, t2, t4
+  li t4, 0x9ced9310685785f0
+  xor t1, t3, t4
+  # round 10 (MixColumns 없음)
+  aes64es t2, t0, t1
+  aes64es t3, t1, t0
+  li t4, 0x7f1d1113c5302b4d
+  xor t0, t2, t4
+  li t4, 0x8ba707f3174a94e3
+  xor t1, t3, t4
+
+  li t5, 0xd8e0c4695ac5b470
+  bne t0, t5, fail
+  li t5, 0x80b7cdd830047b6a
+  bne t1, t5, fail
+
+  # ---- 키 확장 단계 검사 (명세 의사 코드 값) ----
+  li a0, 0x0123456789ABCDEF
+  aes64ks1i a1, a0, 0          # 기대: 0x857C266F857C266F
+  li a2, 0xFEDCBA9876543210
+  li a3, 0x0F0E0D0C0B0A0908
+  aes64ks2 a4, a2, a3          # 기대: 0xFAD8BE9CF5D6B390
+  li t5, 0x857c266f857c266f
+  bne a1, t5, fail
+  li t5, 0xfad8be9cf5d6b390
+  bne a4, t5, fail
+
+  # ---- 사이클: 독립 aes64esm 8개 (두 번 돌려 두 번째 값) ----
+  li t6, 2
+loopT:
+  rdcycle s0
+  rdcycle s1
+  sub s2, s1, s0
+  rdcycle s0
+
+  aes64esm a0, t0, t1
+  aes64esm a1, t0, t1
+  aes64esm a2, t0, t1
+  aes64esm a3, t0, t1
+  aes64esm a4, t0, t1
+  aes64esm a5, t0, t1
+  aes64esm a6, t0, t1
+  aes64esm a7, t0, t1
+  rdcycle s1
+  sub s3, s1, s0
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  mv t3, s2
+  REPORT_U64 cycles_base, t3
+  mv t3, s3
+  REPORT_U64 cycles_aes64esm8, t3
+  TEST_PASS t14_aes
+fail:
+  TEST_FAIL t14_aes

@@ -1,0 +1,20 @@
+Config=rv64gc test=t17_bench_t17_bench elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t17_bench_t17_bench
+Running 1 test 
+REPORT cycles_sum256=1556
+REPORT instret_sum256=1282
+REPORT cycles_sum1024=6148
+REPORT instret_sum1024=5122
+REPORT cycles_sum8192=59396
+REPORT instret_sum8192=40962
+REPORT cycles_branch_random=7686
+REPORT instret_branch_random=5606
+REPORT cycles_branch_sorted=6646
+REPORT instret_branch_sorted=5606
+PASS t17_bench
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t17_bench/t17_bench.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 2us; walltime 45.166 s; speed 49.425 ns/s
+- Verilator: cpu 42.944 s on 1 threads; allocated 266 MB

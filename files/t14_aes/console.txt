@@ -1,0 +1,12 @@
+Config=rv64gc test=t14_aes_t14_aes elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t14_aes_t14_aes
+Running 1 test 
+REPORT cycles_base=1
+REPORT cycles_aes64esm8=9
+PASS t14_aes
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t14_aes/t14_aes.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 17ns; walltime 0.452 s; speed 38.550 ns/s
+- Verilator: cpu 0.360 s on 1 threads; allocated 266 MB
