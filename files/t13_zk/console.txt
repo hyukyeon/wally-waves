@@ -1,0 +1,14 @@
+Config=rv64gc test=t13_zk_t13_zk elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t13_zk_t13_zk
+Running 1 test 
+REPORT cycles_base=1
+REPORT cycles_clmul8=9
+REPORT cycles_brev8_8=9
+REPORT cycles_xor8=9
+PASS t13_zk
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t13_zk/t13_zk.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 24ns; walltime 0.598 s; speed 40.920 ns/s
+- Verilator: cpu 0.497 s on 1 threads; allocated 266 MB

@@ -1,0 +1,130 @@
+.include "common/report.inc"
+
+# t13_zk: Zb/Zk: 비트 조작과 암호 명령 (강의 노트 밖의 내용, 직접 작성)
+# 1) Zbc: clmul, clmulh, clmulr
+# 2) Zbkb: brev8, pack, packh
+# 3) Zbkx: xperm8
+# 4) Zbs: bext
+# 5) Zknh: sha256sig0, sha256sum1 (하위 32비트만 비교), sha512sum0, sha512sig1
+# 6) 사이클: 독립 clmul 8개, 독립 brev8 8개, 독립 xor 8개. 두 번 돌려 두 번째 값을 쓴다.
+# 기대값은 파이썬으로 명세의 정의를 옮겨 계산했다 (ref.py 참고).
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+  li t0, 0x0123456789ABCDEF    # A
+  li t1, 0xFEDCBA9876543210    # B
+  li t2, 0x0001020304050607    # xperm8 색인 (바이트 i 의 값 = 7 - i 번째 바이트를 가져옴)
+
+  # ---- 1. Zbc ----
+  clmul  a0, t0, t1            # 0x40A0789828C810F0
+  clmulh a1, t0, t1            # 0x00E038D8688850B0
+  clmulr a2, t0, t1            # 0x01C071B0D110A160
+
+  # ---- 2. Zbkb ----
+  brev8  a3, t0                # 각 바이트의 비트 순서를 뒤집음: 0x80C4A2E691D5B3F7
+  pack   a4, t0, t1            # 하위 32비트끼리 이어 붙임: 0x7654321089ABCDEF
+  packh  a5, t0, t1            # 하위 8비트끼리 이어 붙임: 0x10EF
+
+  # ---- 3. Zbkx ----
+  xperm8 a6, t0, t2            # 0xEFCDAB8967452301
+
+  # ---- 4. Zbs ----
+  bext   s4, t0, t1            # (A >> (B & 63)) & 1 = (A >> 16) & 1 = 1
+
+  # ---- 5. Zknh ----
+  sha256sig0 a7, t0            # 하위 32비트 기준, 결과의 하위 32비트 = 0x3D5DCC4C
+  sha256sum1 s1, t0            # 하위 32비트 기준, 결과의 하위 32비트 = 0xD6316D8A
+  sha512sum0 s2, t0            # 0xB7C57A100C7EC1AB
+  sha512sig1 s3, t0            # 0x70A3460DBBD4317A
+
+  li t5, 0x40A0789828C810F0
+  bne a0, t5, fail
+  li t5, 0x00E038D8688850B0
+  bne a1, t5, fail
+  li t5, 0x01C071B0D110A160
+  bne a2, t5, fail
+  li t5, 0x80C4A2E691D5B3F7
+  bne a3, t5, fail
+  li t5, 0x7654321089ABCDEF
+  bne a4, t5, fail
+  li t5, 0x10EF
+  bne a5, t5, fail
+  li t5, 0xEFCDAB8967452301
+  bne a6, t5, fail
+  li t5, 1
+  bne s4, t5, fail
+  li t5, 0xFFFFFFFF
+  and t3, a7, t5
+  li t5, 0x3D5DCC4C
+  bne t3, t5, fail
+  li t5, 0xFFFFFFFF
+  and t3, s1, t5
+  li t5, 0xD6316D8A
+  bne t3, t5, fail
+  li t5, 0xB7C57A100C7EC1AB
+  bne s2, t5, fail
+  li t5, 0x70A3460DBBD4317A
+  bne s3, t5, fail
+
+  # ---- 6. 사이클 측정 (두 번 돌린다) ----
+  li t6, 2
+loopT:
+  rdcycle s5
+  rdcycle s6
+  sub s7, s6, s5               # 기준: rdcycle 두 번의 차이
+
+  rdcycle s5
+  clmul a0, t0, t1
+  clmul a1, t0, t1
+  clmul a2, t0, t1
+  clmul a3, t0, t1
+  clmul a4, t0, t1
+  clmul a5, t0, t1
+  clmul a6, t0, t1
+  clmul a7, t0, t1
+  rdcycle s6
+  sub s8, s6, s5               # 독립 clmul 8개
+
+  rdcycle s5
+  brev8 a0, t0
+  brev8 a1, t0
+  brev8 a2, t0
+  brev8 a3, t0
+  brev8 a4, t0
+  brev8 a5, t0
+  brev8 a6, t0
+  brev8 a7, t0
+  rdcycle s6
+  sub s9, s6, s5               # 독립 brev8 8개
+
+  rdcycle s5
+  xor a0, t0, t1
+  xor a1, t0, t1
+  xor a2, t0, t1
+  xor a3, t0, t1
+  xor a4, t0, t1
+  xor a5, t0, t1
+  xor a6, t0, t1
+  xor a7, t0, t1
+  rdcycle s6
+  sub s10, s6, s5              # 독립 xor 8개 (기준이 되는 한 사이클 명령)
+
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  # 측정값 보고 (REPORT 는 t0-t5 를 쓰므로 값은 t3 로 옮긴다)
+  mv t3, s7
+  REPORT_U64 cycles_base, t3
+  mv t3, s8
+  REPORT_U64 cycles_clmul8, t3
+  mv t3, s9
+  REPORT_U64 cycles_brev8_8, t3
+  mv t3, s10
+  REPORT_U64 cycles_xor8, t3
+
+  TEST_PASS t13_zk
+fail:
+  TEST_FAIL t13_zk

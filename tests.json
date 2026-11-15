@@ -358,5 +358,25 @@
    "console",
    "dump"
   ]
+ },
+ {
+  "name": "t13_zk",
+  "stem": "t13_zk",
+  "variant": "",
+  "title": "Zb/Zk: 비트 조작과 암호 명령",
+  "result": "PASS",
+  "fst_size": 902936,
+  "vcd_size": null,
+  "mtime": 1794752914,
+  "groups": [
+   "Pipeline (PC / 명령)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
  }
 ]
