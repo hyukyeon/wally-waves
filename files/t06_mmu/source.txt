@@ -1,0 +1,96 @@
+.include "common/report.inc"
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  la t0, machine_trap
+  csrw mtvec, t0
+  li t0, 1
+  slli t0, t0, 13
+  csrs medeleg, t0
+  la t0, supervisor_trap
+  csrw stvec, t0
+
+  li t0, 0xffffffff
+  csrw pmpaddr0, t0
+  li t0, 0xf
+  csrw pmpcfg0, t0
+
+  la t0, root_page_table
+  srli t0, t0, 12
+  li t1, 8
+  slli t1, t1, 60
+  or t0, t0, t1
+  csrw satp, t0
+  sfence.vma x0, x0
+
+  li t0, 1
+  csrw mcounteren, t0
+  li t0, 0x1800
+  csrc mstatus, t0
+  li t0, 0x800
+  csrs mstatus, t0
+  la t0, supervisor_entry
+  csrw mepc, t0
+  mret
+
+supervisor_entry:
+  rdcycle s3
+  li t0, 0x40000000
+bad_load:
+  ld t1, 0(t0)
+after_bad_load:
+  rdcycle s4
+  sub s5, s4, s3
+  ecall
+
+machine_check:
+  li t0, 13
+  bne s0, t0, fail
+  li t0, 0x40000000
+  bne s2, t0, fail
+  la t0, bad_load
+  bne s1, t0, fail
+  REPORT_U64 sv39_page_fault_cycles, s5
+  TEST_PASS t06_mmu
+fail:
+  TEST_FAIL t06_mmu
+
+.align 2
+machine_trap:
+  csrr t0, mcause
+  li t1, 9
+  beq t0, t1, machine_return
+  csrr s0, mcause
+  csrr s1, mepc
+  csrr s2, mtval
+  REPORT_U64 unexpected_mcause, s0
+  REPORT_U64 unexpected_mepc, s1
+  REPORT_U64 unexpected_mtval, s2
+  TEST_FAIL t06_mmu
+
+machine_return:
+  li t0, 0x1800
+  csrs mstatus, t0
+  la t0, machine_check
+  csrw mepc, t0
+  mret
+
+.align 2
+supervisor_trap:
+  csrr s0, scause
+  csrr s1, sepc
+  csrr s2, stval
+  csrr t0, sepc
+  addi t0, t0, 4
+  csrw sepc, t0
+  sret
+
+.section .data
+.align 12
+root_page_table:
+  .dword 0, 0, 0x200000cf
+  .fill 509, 8, 0

@@ -1,0 +1,38 @@
+.include "common/report.inc"
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+  rdcycle s0
+  li t0, 0x1234
+  li t1, 0
+  czero.eqz t2, t0, t1
+  bnez t2, fail
+  li t1, 1
+  czero.eqz t2, t0, t1
+  bne t2, t0, fail
+
+  li t3, 0x11
+  li t4, 0x22
+  sh1add t5, t3, t4
+  li t6, 0x44
+  bne t5, t6, fail
+
+  li t3, 0xf0
+  li t4, 0x3c
+  andn t5, t3, t4
+  li t6, 0xc0
+  bne t5, t6, fail
+
+  li t3, 1
+  clz t4, t3
+  li t5, 63
+  bne t4, t5, fail
+  rdcycle s1
+  sub s2, s1, s0
+  REPORT_U64 zicond_zba_zbb_cycles, s2
+  TEST_PASS t05_zicond_zb
+fail:
+  TEST_FAIL t05_zicond_zb

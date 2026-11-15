@@ -1,0 +1,1083 @@
+# t05_zicond_zb RTL dump (클럭 상승 엣지마다 샘플)
+# 원본: t05_zicond_zb.vcd, 사이클 0..1078
+# 표기: '*신호' = 1, '.신호' = 0, '이름=16진수' = 여러 비트 값
+# 사이클   시간(ps)  PC        명령      니모닉                              나머지 신호
+     0         10  PC=00000000  00000000                                      PCE=0 InstrD=0 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     1         20  PC=00000000  00000000                                      PCE=0 InstrD=0 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     2         30  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     3         40  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     4         50  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     5         60  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     6         70  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     7         80  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     8         90  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+     9        100  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    10        110  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    11        120  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    12        130  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    13        140  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    14        150  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    15        160  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    16        170  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    17        180  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    18        190  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    19        200  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    20        210  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    21        220  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    22        230  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    23        240  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    24        250  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    25        260  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    26        270  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    27        280  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    28        290  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    29        300  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    30        310  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    31        320  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    32        330  PC=00000000  00000000                                      PCE=0 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    33        340  PC=00000000  00000000                                      PCE=0 InstrD=6117 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    34        350  PC=00000000  00000013                                      PCE=80000000 InstrD=10113 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    35        360  PC=80000000  00006117  auipc sp,0x6                        PCE=80000004 InstrD=c0002473 ForwardedSrcAE=80006000 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+    36        370  PC=80000004  00010113  addi sp,sp,0                        PCE=80000008 InstrD=12b7 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    37        380  PC=80000008  c0002473  csrrs s0,cycle,zero                 PCE=8000000c InstrD=2342829b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    38        390  PC=8000000c  000012b7  lui t0,0x1                          PCE=80000010 InstrD=313 ForwardedSrcAE=1000 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+    39        400  PC=80000010  2342829b  addiw t0,t0,564                     PCE=80000014 InstrD=e62d3b3 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    40        410  PC=80000014  00000313  addi t1,zero,0                      PCE=80000018 InstrD=8039863 ForwardedSrcAE=1234 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=2
+    41        420  PC=80000018  0e62d3b3  czero.eqz t2,t0,t1                  PCE=8000001c InstrD=100313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+    42        430  PC=8000001c  08039863  bne t2,zero,800000ac <fail>         PCE=80000020 InstrD=e62d3b3 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    43        440  PC=80000020  00100313  addi t1,zero,1                      PCE=80000024 InstrD=8539263 ForwardedSrcAE=1234 ForwardedSrcBE=1 ForwardAE=0 ForwardBE=2
+    44        450  PC=80000024  0e62d3b3  czero.eqz t2,t0,t1                  PCE=80000028 InstrD=1100e13 ForwardedSrcAE=1234 ForwardedSrcBE=1234 ForwardAE=2 ForwardBE=0
+    45        460  PC=80000028  08539263  bne t2,t0,800000ac <fail>           PCE=8000002c InstrD=2200e93 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    46        470  PC=8000002c  01100e13  addi t3,zero,17                     PCE=80000030 InstrD=21de2f33 ForwardedSrcAE=0 ForwardedSrcBE=80006000 ForwardAE=0 ForwardBE=0
+    47        480  PC=80000030  02200e93  addi t4,zero,34                     PCE=80000034 InstrD=4400f93 ForwardedSrcAE=11 ForwardedSrcBE=22 ForwardAE=1 ForwardBE=2
+    48        490  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    49        500  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    50        510  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    51        520  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    52        530  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    53        540  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    54        550  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    55        560  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    56        570  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    57        580  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    58        590  PC=80000034  21de2f33  sh1add t5,t3,t4                     PCE=80000038 InstrD=7ff1863 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    59        600  PC=80000038  04400f93  addi t6,zero,68                     PCE=8000003c InstrD=f000e13 ForwardedSrcAE=44 ForwardedSrcBE=44 ForwardAE=1 ForwardBE=2
+    60        610  PC=8000003c  07ff1863  bne t5,t6,800000ac <fail>           PCE=80000040 InstrD=3c00e93 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    61        620  PC=80000040  0f000e13  addi t3,zero,240                    PCE=80000044 InstrD=41de7f33 ForwardedSrcAE=0 ForwardedSrcBE=f0 ForwardAE=0 ForwardBE=2
+    62        630  PC=80000044  03c00e93  addi t4,zero,60                     PCE=80000048 InstrD=c000f93 ForwardedSrcAE=f0 ForwardedSrcBE=3c ForwardAE=1 ForwardBE=2
+    63        640  PC=80000048  41de7f33  andn t5,t3,t4                       PCE=8000004c InstrD=5ff1e63 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    64        650  PC=8000004c  0c000f93  addi t6,zero,192                    PCE=80000050 InstrD=100e13 ForwardedSrcAE=c0 ForwardedSrcBE=c0 ForwardAE=1 ForwardBE=2
+    65        660  PC=80000050  05ff1e63  bne t5,t6,800000ac <fail>           PCE=80000054 InstrD=600e1e93 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    66        670  PC=80000054  00100e13  addi t3,zero,1                      PCE=80000058 InstrD=3f00f13 ForwardedSrcAE=1 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+    67        680  PC=80000058  600e1e93  clz t4,t3                           PCE=8000005c InstrD=5ee9663 ForwardedSrcAE=0 ForwardedSrcBE=c0 ForwardAE=0 ForwardBE=0
+    68        690  PC=8000005c  03f00f13  addi t5,zero,63                     PCE=80000060 InstrD=c00024f3 ForwardedSrcAE=3f ForwardedSrcBE=3f ForwardAE=1 ForwardBE=2
+    69        700  PC=80000060  05ee9663  bne t4,t5,800000ac <fail>           PCE=80000064 InstrD=40848933 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    70        710  PC=80000064  c00024f3  csrrs s1,cycle,zero                 PCE=80000068 InstrD=40848933 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    71        720  PC=80000068  00000013  (버블/플러시)                            PCE=80000068 InstrD=517 ForwardedSrcAE=30 ForwardedSrcBE=f ForwardAE=1 ForwardBE=0
+    72        730  PC=80000068  40848933  sub s2,s1,s0                        PCE=8000006c InstrD=de50513 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    73        740  PC=8000006c  00000517  auipc a0,0x0                        PCE=80000070 InstrD=58000ef ForwardedSrcAE=8000006c ForwardedSrcBE=3f ForwardAE=2 ForwardBE=0
+    74        750  PC=80000070  0de50513  addi a0,a0,222                      PCE=80000074 InstrD=90513 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    75        760  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    76        770  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    77        780  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    78        790  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    79        800  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    80        810  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    81        820  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    82        830  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    83        840  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    84        850  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    85        860  PC=80000074  058000ef  jal ra,800000cc <report_print_string>  PCE=80000078 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    86        870  PC=80000078  00000013  (버블/플러시)                            PCE=0 InstrD=ff010113 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    87        880  PC=00000000  00000013                                      PCE=800000cc InstrD=113423 ForwardedSrcAE=80006000 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+    88        890  PC=800000cc  ff010113  (버블/플러시)                            PCE=800000ce InstrD=a002b3 ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000078 ForwardAE=2 ForwardBE=0
+    89        900  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    90        910  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    91        920  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    92        930  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    93        940  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    94        950  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    95        960  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    96        970  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    97        980  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    98        990  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+    99       1000  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+   100       1010  PC=800000d0  00a002b3  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000014a ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   101       1020  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   102       1030  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   103       1040  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   104       1050  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   105       1060  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   106       1070  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   107       1080  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   108       1090  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   109       1100  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   110       1110  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   111       1120  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   112       1130  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=52 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   113       1140  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000014a ForwardAE=0 ForwardBE=0
+   114       1150  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=13283 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   115       1160  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   116       1170  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   117       1180  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   118       1190  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   119       1200  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   120       1210  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   121       1220  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   122       1230  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   123       1240  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   124       1250  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   125       1260  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=800000de InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   126       1270  PC=800000de  00000013  (버블/플러시)                            PCE=0 InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   127       1280  PC=00000000  00000013                                      PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=0
+   128       1290  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   129       1300  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   130       1310  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   131       1320  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   132       1330  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   133       1340  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   134       1350  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   135       1360  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   136       1370  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   137       1380  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   138       1390  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   139       1400  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   140       1410  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   141       1420  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   142       1430  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000052 ForwardAE=2 ForwardBE=0
+   143       1440  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=1412503 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   144       1450  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   145       1460  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   146       1470  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   147       1480  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   148       1490  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   149       1500  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   150       1510  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   151       1520  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   152       1530  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   153       1540  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   154       1550  PC=80000148  00008067  (버블/플러시)                            PCE=8000014a InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   155       1560  PC=8000014a  00000013                                      PCE=0 InstrD=13283 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   156       1570  PC=00000000  00000013                                      PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   157       1580  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   158       1590  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000014a ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   159       1600  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=813083 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   160       1610  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000e4 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   161       1620  PC=800000e4  00000013  (버블/플러시)                            PCE=0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   162       1630  PC=00000000  00000013                                      PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000014b ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   163       1640  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   164       1650  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=45 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   165       1660  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000014b ForwardAE=0 ForwardBE=0
+   166       1670  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   167       1680  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   168       1690  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   169       1700  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=45 ForwardAE=2 ForwardBE=0
+   170       1710  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   171       1720  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   172       1730  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000045 ForwardAE=2 ForwardBE=0
+   173       1740  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   174       1750  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   175       1760  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   176       1770  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000014b ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   177       1780  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   178       1790  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000014c ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   179       1800  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   180       1810  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=50 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   181       1820  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000014c ForwardAE=0 ForwardBE=0
+   182       1830  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   183       1840  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   184       1850  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   185       1860  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=50 ForwardAE=2 ForwardBE=0
+   186       1870  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   187       1880  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   188       1890  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000050 ForwardAE=2 ForwardBE=0
+   189       1900  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   190       1910  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   191       1920  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   192       1930  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000014c ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   193       1940  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   194       1950  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000014d ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   195       1960  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   196       1970  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=4f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   197       1980  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000014d ForwardAE=0 ForwardBE=0
+   198       1990  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   199       2000  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   200       2010  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   201       2020  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=4f ForwardAE=2 ForwardBE=0
+   202       2030  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   203       2040  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   204       2050  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000004f ForwardAE=2 ForwardBE=0
+   205       2060  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   206       2070  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   207       2080  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   208       2090  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000014d ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   209       2100  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   210       2110  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000014e ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   211       2120  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   212       2130  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=52 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   213       2140  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000014e ForwardAE=0 ForwardBE=0
+   214       2150  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   215       2160  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   216       2170  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   217       2180  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=52 ForwardAE=2 ForwardBE=0
+   218       2190  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   219       2200  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   220       2210  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000052 ForwardAE=2 ForwardBE=0
+   221       2220  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   222       2230  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   223       2240  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   224       2250  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000014e ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   225       2260  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   226       2270  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000014f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   227       2280  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   228       2290  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=54 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   229       2300  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000014f ForwardAE=0 ForwardBE=0
+   230       2310  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   231       2320  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   232       2330  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   233       2340  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=54 ForwardAE=2 ForwardBE=0
+   234       2350  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   235       2360  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   236       2370  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000054 ForwardAE=2 ForwardBE=0
+   237       2380  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   238       2390  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   239       2400  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   240       2410  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000014f ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   241       2420  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   242       2430  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000150 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   243       2440  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   244       2450  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=20 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   245       2460  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000150 ForwardAE=0 ForwardBE=0
+   246       2470  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   247       2480  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   248       2490  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   249       2500  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=20 ForwardAE=2 ForwardBE=0
+   250       2510  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   251       2520  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   252       2530  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000020 ForwardAE=2 ForwardBE=0
+   253       2540  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   254       2550  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   255       2560  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   256       2570  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000150 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   257       2580  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   258       2590  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000151 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   259       2600  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   260       2610  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=7a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   261       2620  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000151 ForwardAE=0 ForwardBE=0
+   262       2630  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   263       2640  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   264       2650  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   265       2660  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=7a ForwardAE=2 ForwardBE=0
+   266       2670  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   267       2680  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   268       2690  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000007a ForwardAE=2 ForwardBE=0
+   269       2700  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   270       2710  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   271       2720  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   272       2730  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000151 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   273       2740  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   274       2750  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000152 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   275       2760  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   276       2770  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=69 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   277       2780  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000152 ForwardAE=0 ForwardBE=0
+   278       2790  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   279       2800  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   280       2810  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   281       2820  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=69 ForwardAE=2 ForwardBE=0
+   282       2830  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   283       2840  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   284       2850  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000069 ForwardAE=2 ForwardBE=0
+   285       2860  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   286       2870  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   287       2880  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   288       2890  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000152 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   289       2900  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   290       2910  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000153 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   291       2920  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   292       2930  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=63 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   293       2940  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000153 ForwardAE=0 ForwardBE=0
+   294       2950  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   295       2960  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   296       2970  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   297       2980  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=63 ForwardAE=2 ForwardBE=0
+   298       2990  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   299       3000  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   300       3010  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000063 ForwardAE=2 ForwardBE=0
+   301       3020  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   302       3030  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   303       3040  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   304       3050  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000153 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   305       3060  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   306       3070  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000154 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   307       3080  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   308       3090  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=6f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   309       3100  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000154 ForwardAE=0 ForwardBE=0
+   310       3110  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   311       3120  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   312       3130  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   313       3140  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=6f ForwardAE=2 ForwardBE=0
+   314       3150  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   315       3160  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   316       3170  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000006f ForwardAE=2 ForwardBE=0
+   317       3180  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   318       3190  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   319       3200  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   320       3210  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000154 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   321       3220  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   322       3230  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000155 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   323       3240  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   324       3250  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=6e ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   325       3260  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000155 ForwardAE=0 ForwardBE=0
+   326       3270  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   327       3280  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   328       3290  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   329       3300  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=6e ForwardAE=2 ForwardBE=0
+   330       3310  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   331       3320  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   332       3330  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000006e ForwardAE=2 ForwardBE=0
+   333       3340  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   334       3350  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   335       3360  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   336       3370  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000155 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   337       3380  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   338       3390  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000156 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   339       3400  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   340       3410  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=64 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   341       3420  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000156 ForwardAE=0 ForwardBE=0
+   342       3430  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   343       3440  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   344       3450  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   345       3460  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=64 ForwardAE=2 ForwardBE=0
+   346       3470  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   347       3480  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   348       3490  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000064 ForwardAE=2 ForwardBE=0
+   349       3500  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   350       3510  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   351       3520  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   352       3530  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000156 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   353       3540  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   354       3550  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000157 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   355       3560  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   356       3570  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=5f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   357       3580  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000157 ForwardAE=0 ForwardBE=0
+   358       3590  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   359       3600  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   360       3610  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   361       3620  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=5f ForwardAE=2 ForwardBE=0
+   362       3630  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   363       3640  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   364       3650  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000005f ForwardAE=2 ForwardBE=0
+   365       3660  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   366       3670  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   367       3680  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   368       3690  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000157 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   369       3700  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   370       3710  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000158 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   371       3720  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   372       3730  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=7a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   373       3740  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000158 ForwardAE=0 ForwardBE=0
+   374       3750  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   375       3760  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   376       3770  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   377       3780  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=7a ForwardAE=2 ForwardBE=0
+   378       3790  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   379       3800  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   380       3810  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000007a ForwardAE=2 ForwardBE=0
+   381       3820  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   382       3830  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   383       3840  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   384       3850  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000158 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   385       3860  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   386       3870  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000159 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   387       3880  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   388       3890  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=62 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   389       3900  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000159 ForwardAE=0 ForwardBE=0
+   390       3910  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   391       3920  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   392       3930  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   393       3940  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=62 ForwardAE=2 ForwardBE=0
+   394       3950  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   395       3960  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   396       3970  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000062 ForwardAE=2 ForwardBE=0
+   397       3980  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   398       3990  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   399       4000  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   400       4010  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000159 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   401       4020  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   402       4030  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000015a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   403       4040  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   404       4050  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=61 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   405       4060  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000015a ForwardAE=0 ForwardBE=0
+   406       4070  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   407       4080  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   408       4090  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   409       4100  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=61 ForwardAE=2 ForwardBE=0
+   410       4110  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   411       4120  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   412       4130  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000061 ForwardAE=2 ForwardBE=0
+   413       4140  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   414       4150  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   415       4160  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   416       4170  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000015a ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   417       4180  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   418       4190  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000015b ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   419       4200  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   420       4210  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=5f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   421       4220  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000015b ForwardAE=0 ForwardBE=0
+   422       4230  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   423       4240  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   424       4250  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   425       4260  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=5f ForwardAE=2 ForwardBE=0
+   426       4270  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   427       4280  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   428       4290  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000005f ForwardAE=2 ForwardBE=0
+   429       4300  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   430       4310  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   431       4320  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   432       4330  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000015b ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   433       4340  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   434       4350  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000015c ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   435       4360  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   436       4370  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=7a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   437       4380  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000015c ForwardAE=0 ForwardBE=0
+   438       4390  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   439       4400  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   440       4410  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   441       4420  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=7a ForwardAE=2 ForwardBE=0
+   442       4430  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   443       4440  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   444       4450  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000007a ForwardAE=2 ForwardBE=0
+   445       4460  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   446       4470  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   447       4480  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   448       4490  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000015c ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   449       4500  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   450       4510  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000015d ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   451       4520  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   452       4530  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=62 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   453       4540  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000015d ForwardAE=0 ForwardBE=0
+   454       4550  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   455       4560  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   456       4570  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   457       4580  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=62 ForwardAE=2 ForwardBE=0
+   458       4590  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   459       4600  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   460       4610  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000062 ForwardAE=2 ForwardBE=0
+   461       4620  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   462       4630  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   463       4640  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   464       4650  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000015d ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   465       4660  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   466       4670  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000015e ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   467       4680  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   468       4690  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=62 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   469       4700  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000015e ForwardAE=0 ForwardBE=0
+   470       4710  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   471       4720  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   472       4730  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   473       4740  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=62 ForwardAE=2 ForwardBE=0
+   474       4750  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   475       4760  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   476       4770  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000062 ForwardAE=2 ForwardBE=0
+   477       4780  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   478       4790  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   479       4800  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   480       4810  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000015e ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   481       4820  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   482       4830  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000015f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   483       4840  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   484       4850  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=5f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   485       4860  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000015f ForwardAE=0 ForwardBE=0
+   486       4870  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   487       4880  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   488       4890  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   489       4900  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=5f ForwardAE=2 ForwardBE=0
+   490       4910  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   491       4920  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   492       4930  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000005f ForwardAE=2 ForwardBE=0
+   493       4940  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   494       4950  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   495       4960  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   496       4970  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000015f ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   497       4980  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   498       4990  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000160 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   499       5000  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   500       5010  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=63 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   501       5020  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000160 ForwardAE=0 ForwardBE=0
+   502       5030  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   503       5040  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   504       5050  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   505       5060  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=63 ForwardAE=2 ForwardBE=0
+   506       5070  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   507       5080  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   508       5090  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000063 ForwardAE=2 ForwardBE=0
+   509       5100  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   510       5110  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   511       5120  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   512       5130  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000160 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   513       5140  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   514       5150  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000161 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   515       5160  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   516       5170  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=79 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   517       5180  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000161 ForwardAE=0 ForwardBE=0
+   518       5190  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   519       5200  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   520       5210  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   521       5220  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=79 ForwardAE=2 ForwardBE=0
+   522       5230  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   523       5240  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   524       5250  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000079 ForwardAE=2 ForwardBE=0
+   525       5260  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   526       5270  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   527       5280  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   528       5290  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000161 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   529       5300  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   530       5310  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000162 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   531       5320  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   532       5330  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=63 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   533       5340  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000162 ForwardAE=0 ForwardBE=0
+   534       5350  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   535       5360  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   536       5370  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   537       5380  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=63 ForwardAE=2 ForwardBE=0
+   538       5390  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   539       5400  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   540       5410  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000063 ForwardAE=2 ForwardBE=0
+   541       5420  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   542       5430  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   543       5440  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   544       5450  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000162 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   545       5460  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   546       5470  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000163 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   547       5480  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   548       5490  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=6c ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   549       5500  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000163 ForwardAE=0 ForwardBE=0
+   550       5510  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   551       5520  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   552       5530  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   553       5540  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=6c ForwardAE=2 ForwardBE=0
+   554       5550  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   555       5560  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   556       5570  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000006c ForwardAE=2 ForwardBE=0
+   557       5580  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   558       5590  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   559       5600  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   560       5610  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000163 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   561       5620  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   562       5630  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000164 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   563       5640  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   564       5650  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=65 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   565       5660  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000164 ForwardAE=0 ForwardBE=0
+   566       5670  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   567       5680  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   568       5690  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   569       5700  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=65 ForwardAE=2 ForwardBE=0
+   570       5710  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   571       5720  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   572       5730  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000065 ForwardAE=2 ForwardBE=0
+   573       5740  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   574       5750  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   575       5760  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   576       5770  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000164 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   577       5780  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   578       5790  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000165 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   579       5800  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   580       5810  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=73 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   581       5820  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000165 ForwardAE=0 ForwardBE=0
+   582       5830  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   583       5840  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   584       5850  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   585       5860  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=73 ForwardAE=2 ForwardBE=0
+   586       5870  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   587       5880  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   588       5890  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000073 ForwardAE=2 ForwardBE=0
+   589       5900  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   590       5910  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   591       5920  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   592       5930  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000165 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   593       5940  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   594       5950  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000166 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   595       5960  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   596       5970  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=3d ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   597       5980  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000166 ForwardAE=0 ForwardBE=0
+   598       5990  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   599       6000  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   600       6010  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   601       6020  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=3d ForwardAE=2 ForwardBE=0
+   602       6030  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   603       6040  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   604       6050  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000003d ForwardAE=2 ForwardBE=0
+   605       6060  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   606       6070  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   607       6080  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   608       6090  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000166 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   609       6100  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   610       6110  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000167 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   611       6120  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   612       6130  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   613       6140  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   614       6150  PC=800000d8  00000013  (버블/플러시)                            PCE=0 InstrD=813083 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   615       6160  PC=00000000  00000013                                      PCE=800000e4 InstrD=1010113 ForwardedSrcAE=80005ff0 ForwardedSrcBE=f ForwardAE=0 ForwardBE=0
+   616       6170  PC=800000e4  00813083  (버블/플러시)                            PCE=800000e6 InstrD=8067 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   617       6180  PC=800000e6  01010113  (버블/플러시)                            PCE=800000e8 InstrD=ff010113 ForwardedSrcAE=80000078 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   618       6190  PC=800000e8  00008067  (버블/플러시)                            PCE=800000ea InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   619       6200  PC=800000ea  00000013  (버블/플러시)                            PCE=0 InstrD=90513 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   620       6210  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   621       6220  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   622       6230  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   623       6240  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   624       6250  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   625       6260  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   626       6270  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   627       6280  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   628       6290  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   629       6300  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   630       6310  PC=00000000  00000013                                      PCE=80000078 InstrD=6e000ef ForwardedSrcAE=21 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   631       6320  PC=80000078  00090513  addi a0,s2,0                        PCE=8000007c InstrD=517 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   632       6330  PC=8000007c  06e000ef  jal ra,800000ea <report_print_u64>  PCE=80000080 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   633       6340  PC=80000080  00000013  (버블/플러시)                            PCE=0 InstrD=ff010113 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   634       6350  PC=00000000  00000013                                      PCE=800000ea InstrD=113423 ForwardedSrcAE=80006000 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   635       6360  PC=800000ea  ff010113  (버블/플러시)                            PCE=800000ec InstrD=4397 ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000080 ForwardAE=2 ForwardBE=0
+   636       6370  PC=800000ec  00113423  (버블/플러시)                            PCE=800000ee InstrD=f1238393 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   637       6380  PC=800000ee  00004397  auipc t2,0x4                        PCE=800000f2 InstrD=1438393 ForwardedSrcAE=800040ee ForwardedSrcBE=21 ForwardAE=2 ForwardBE=0
+   638       6390  PC=800000f2  f1238393  addi t2,t2,-238                     PCE=800000f6 InstrD=a00e13 ForwardedSrcAE=80004000 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   639       6400  PC=800000f6  01438393  (버블/플러시)                            PCE=800000f8 InstrD=3c57eb3 ForwardedSrcAE=0 ForwardedSrcBE=21 ForwardAE=0 ForwardBE=0
+   640       6410  PC=800000f6  01438393  (버블/플러시)                            PCE=800000f8 InstrD=3c57eb3 ForwardedSrcAE=0 ForwardedSrcBE=21 ForwardAE=0 ForwardBE=0
+   641       6420  PC=800000f8  00a00e13  (버블/플러시)                            PCE=800000fa InstrD=3c55533 ForwardedSrcAE=21 ForwardedSrcBE=a ForwardAE=0 ForwardBE=2
+   642       6430  PC=800000fa  00000013  (버블/플러시)                            PCE=800000fa InstrD=3c55533 ForwardedSrcAE=21 ForwardedSrcBE=a ForwardAE=0 ForwardBE=1
+   643       6440  PC=800000fa  00000013  (버블/플러시)                            PCE=800000fa InstrD=3c55533 ForwardedSrcAE=21 ForwardedSrcBE=1 ForwardAE=0 ForwardBE=0
+   644       6450  PC=800000fa  03c57eb3  remu t4,a0,t3                       PCE=800000fe InstrD=30e8e93 ForwardedSrcAE=21 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   645       6460  PC=800000fe  00000013  (버블/플러시)                            PCE=800000fe InstrD=30e8e93 ForwardedSrcAE=21 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   646       6470  PC=800000fe  00000013  (버블/플러시)                            PCE=800000fe InstrD=30e8e93 ForwardedSrcAE=21 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   647       6480  PC=800000fe  03c55533  divu a0,a0,t3                       PCE=80000102 InstrD=fff38393 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   648       6490  PC=80000102  030e8e93  addi t4,t4,48                       PCE=80000106 InstrD=1d38023 ForwardedSrcAE=80004014 ForwardedSrcBE=c0 ForwardAE=0 ForwardBE=0
+   649       6500  PC=80000106  fff38393  (버블/플러시)                            PCE=80000108 InstrD=fe0517e3 ForwardedSrcAE=80004013 ForwardedSrcBE=33 ForwardAE=2 ForwardBE=1
+   650       6510  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=4f17 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   651       6520  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   652       6530  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   653       6540  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   654       6550  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   655       6560  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   656       6570  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   657       6580  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   658       6590  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   659       6600  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   660       6610  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=13 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   661       6620  PC=8000010c  fe0517e3  (버블/플러시)                            PCE=8000010e InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   662       6630  PC=8000010e  00000013  (버블/플러시)                            PCE=0 InstrD=3c57eb3 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   663       6640  PC=8000010e  00000013  (버블/플러시)                            PCE=0 InstrD=3c57eb3 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   664       6650  PC=00000000  00000013                                      PCE=800000fa InstrD=3c55533 ForwardedSrcAE=3 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   665       6660  PC=800000fa  00000013  (버블/플러시)                            PCE=800000fa InstrD=3c55533 ForwardedSrcAE=3 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   666       6670  PC=800000fa  03c57eb3  remu t4,a0,t3                       PCE=800000fe InstrD=30e8e93 ForwardedSrcAE=3 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   667       6680  PC=800000fe  00000013  (버블/플러시)                            PCE=800000fe InstrD=30e8e93 ForwardedSrcAE=3 ForwardedSrcBE=a ForwardAE=0 ForwardBE=0
+   668       6690  PC=800000fe  03c55533  divu a0,a0,t3                       PCE=80000102 InstrD=fff38393 ForwardedSrcAE=3 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   669       6700  PC=80000102  030e8e93  addi t4,t4,48                       PCE=80000106 InstrD=1d38023 ForwardedSrcAE=80004013 ForwardedSrcBE=c0 ForwardAE=0 ForwardBE=0
+   670       6710  PC=80000106  fff38393  (버블/플러시)                            PCE=80000108 InstrD=fe0517e3 ForwardedSrcAE=80004012 ForwardedSrcBE=33 ForwardAE=2 ForwardBE=1
+   671       6720  PC=80000108  01d38023  sb t4,0(t2)                         PCE=8000010c InstrD=4f17 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   672       6730  PC=8000010c  fe0517e3  (버블/플러시)                            PCE=8000010e InstrD=ef2f0f13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   673       6740  PC=8000010e  00004f17  auipc t5,0x4                        PCE=80000112 InstrD=14f0f13 ForwardedSrcAE=8000410e ForwardedSrcBE=21 ForwardAE=2 ForwardBE=0
+   674       6750  PC=80000112  ef2f0f13  addi t5,t5,-270                     PCE=80000116 InstrD=1e38a63 ForwardedSrcAE=80004000 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   675       6760  PC=80000116  014f0f13  (버블/플러시)                            PCE=80000118 InstrD=3c503 ForwardedSrcAE=80004012 ForwardedSrcBE=80004014 ForwardAE=0 ForwardBE=2
+   676       6770  PC=80000118  01e38a63  beq t2,t5,8000012c <report_print_u64+0x42>  PCE=8000011c InstrD=713023 ForwardedSrcAE=80004012 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   677       6780  PC=8000011c  0003c503  lbu a0,0(t2)                        PCE=80000120 InstrD=10000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80004012 ForwardAE=0 ForwardBE=0
+   678       6790  PC=80000120  00713023  (버블/플러시)                            PCE=80000122 InstrD=13383 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   679       6800  PC=80000122  010000ef  jal ra,80000132 <report_putchar>    PCE=80000126 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   680       6810  PC=80000126  00000013  (버블/플러시)                            PCE=0 InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   681       6820  PC=00000000  00000013                                      PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=80000126 ForwardAE=0 ForwardBE=0
+   682       6830  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   683       6840  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=33 ForwardAE=2 ForwardBE=0
+   684       6850  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   685       6860  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   686       6870  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000033 ForwardAE=2 ForwardBE=0
+   687       6880  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13383 ForwardedSrcAE=80000126 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   688       6890  PC=80000148  00008067  (버블/플러시)                            PCE=80000126 InstrD=138393 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   689       6900  PC=80000126  00013383  (버블/플러시)                            PCE=80000128 InstrD=138393 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   690       6910  PC=80000128  00000013  (버블/플러시)                            PCE=80000128 InstrD=fefff06f ForwardedSrcAE=80004012 ForwardedSrcBE=80000126 ForwardAE=1 ForwardBE=0
+   691       6920  PC=80000128  00138393  (버블/플러시)                            PCE=8000012a InstrD=813083 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   692       6930  PC=8000012a  fefff06f  (버블/플러시)                            PCE=8000012c InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   693       6940  PC=8000012c  00000013  (버블/플러시)                            PCE=0 InstrD=1e38a63 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   694       6950  PC=00000000  00000013                                      PCE=80000118 InstrD=3c503 ForwardedSrcAE=80004013 ForwardedSrcBE=80004014 ForwardAE=0 ForwardBE=0
+   695       6960  PC=80000118  01e38a63  beq t2,t5,8000012c <report_print_u64+0x42>  PCE=8000011c InstrD=713023 ForwardedSrcAE=80004013 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   696       6970  PC=8000011c  0003c503  lbu a0,0(t2)                        PCE=80000120 InstrD=10000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80004013 ForwardAE=0 ForwardBE=0
+   697       6980  PC=80000120  00713023  (버블/플러시)                            PCE=80000122 InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   698       6990  PC=80000122  010000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=80000126 ForwardAE=0 ForwardBE=2
+   699       7000  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   700       7010  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=33 ForwardAE=2 ForwardBE=0
+   701       7020  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   702       7030  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   703       7040  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000033 ForwardAE=2 ForwardBE=0
+   704       7050  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13383 ForwardedSrcAE=80000126 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   705       7060  PC=80000148  00008067  (버블/플러시)                            PCE=80000126 InstrD=138393 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   706       7070  PC=80000126  00013383  (버블/플러시)                            PCE=80000128 InstrD=138393 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   707       7080  PC=80000128  00000013  (버블/플러시)                            PCE=80000128 InstrD=fefff06f ForwardedSrcAE=80004013 ForwardedSrcBE=80000126 ForwardAE=1 ForwardBE=0
+   708       7090  PC=80000128  00138393  (버블/플러시)                            PCE=8000012a InstrD=1e38a63 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   709       7100  PC=8000012a  fefff06f  (버블/플러시)                            PCE=80000118 InstrD=3c503 ForwardedSrcAE=80004014 ForwardedSrcBE=80004014 ForwardAE=1 ForwardBE=0
+   710       7110  PC=80000118  01e38a63  beq t2,t5,8000012c <report_print_u64+0x42>  PCE=8000011c InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   711       7120  PC=8000011c  00000013  (버블/플러시)                            PCE=0 InstrD=813083 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   712       7130  PC=00000000  00000013                                      PCE=8000012c InstrD=1010113 ForwardedSrcAE=80005ff0 ForwardedSrcBE=f ForwardAE=0 ForwardBE=0
+   713       7140  PC=8000012c  00813083  (버블/플러시)                            PCE=8000012e InstrD=8067 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   714       7150  PC=8000012e  01010113  (버블/플러시)                            PCE=80000130 InstrD=1010029b ForwardedSrcAE=80000080 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   715       7160  PC=80000130  00008067  (버블/플러시)                            PCE=80000132 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   716       7170  PC=80000132  00000013  (버블/플러시)                            PCE=0 InstrD=517 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   717       7180  PC=00000000  00000013                                      PCE=80000080 InstrD=e850513 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   718       7190  PC=80000080  00000517  auipc a0,0x0                        PCE=80000084 InstrD=44000ef ForwardedSrcAE=80000080 ForwardedSrcBE=f ForwardAE=2 ForwardBE=0
+   719       7200  PC=80000084  0e850513  addi a0,a0,232                      PCE=80000088 InstrD=517 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   720       7210  PC=80000088  044000ef  jal ra,800000cc <report_print_string>  PCE=8000008c InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   721       7220  PC=8000008c  00000013  (버블/플러시)                            PCE=0 InstrD=ff010113 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   722       7230  PC=00000000  00000013                                      PCE=800000cc InstrD=113423 ForwardedSrcAE=80006000 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   723       7240  PC=800000cc  ff010113  (버블/플러시)                            PCE=800000ce InstrD=a002b3 ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000008c ForwardAE=2 ForwardBE=0
+   724       7250  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=80000168 ForwardAE=0 ForwardBE=0
+   725       7260  PC=800000d0  00a002b3  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000168 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   726       7270  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   727       7280  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   728       7290  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000168 ForwardAE=0 ForwardBE=0
+   729       7300  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   730       7310  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   731       7320  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   732       7330  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=a ForwardAE=2 ForwardBE=0
+   733       7340  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   734       7350  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   735       7360  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000000a ForwardAE=2 ForwardBE=0
+   736       7370  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   737       7380  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   738       7390  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   739       7400  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000168 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   740       7410  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   741       7420  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000169 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   742       7430  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   743       7440  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   744       7450  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   745       7460  PC=800000d8  00000013  (버블/플러시)                            PCE=0 InstrD=813083 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   746       7470  PC=00000000  00000013                                      PCE=800000e4 InstrD=1010113 ForwardedSrcAE=80005ff0 ForwardedSrcBE=f ForwardAE=0 ForwardBE=0
+   747       7480  PC=800000e4  00813083  (버블/플러시)                            PCE=800000e6 InstrD=8067 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   748       7490  PC=800000e6  01010113  (버블/플러시)                            PCE=800000e8 InstrD=517 ForwardedSrcAE=8000008c ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   749       7500  PC=800000e8  00008067  (버블/플러시)                            PCE=8000008c InstrD=de50513 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   750       7510  PC=8000008c  00000517  auipc a0,0x0                        PCE=80000090 InstrD=38000ef ForwardedSrcAE=8000008c ForwardedSrcBE=80004014 ForwardAE=2 ForwardBE=0
+   751       7520  PC=80000090  0de50513  addi a0,a0,222                      PCE=80000094 InstrD=1297 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   752       7530  PC=80000094  038000ef  jal ra,800000cc <report_print_string>  PCE=80000098 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   753       7540  PC=80000098  00000013  (버블/플러시)                            PCE=0 InstrD=ff010113 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   754       7550  PC=00000000  00000013                                      PCE=800000cc InstrD=113423 ForwardedSrcAE=80006000 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   755       7560  PC=800000cc  ff010113  (버블/플러시)                            PCE=800000ce InstrD=a002b3 ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000098 ForwardAE=2 ForwardBE=0
+   756       7570  PC=800000ce  00113423  (버블/플러시)                            PCE=800000d0 InstrD=2c503 ForwardedSrcAE=0 ForwardedSrcBE=8000016a ForwardAE=0 ForwardBE=0
+   757       7580  PC=800000d0  00a002b3  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000016a ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   758       7590  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   759       7600  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=50 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   760       7610  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000016a ForwardAE=0 ForwardBE=0
+   761       7620  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   762       7630  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   763       7640  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   764       7650  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=50 ForwardAE=2 ForwardBE=0
+   765       7660  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   766       7670  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   767       7680  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000050 ForwardAE=2 ForwardBE=0
+   768       7690  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   769       7700  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   770       7710  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   771       7720  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000016a ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   772       7730  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   773       7740  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000016b ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   774       7750  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   775       7760  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=41 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   776       7770  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000016b ForwardAE=0 ForwardBE=0
+   777       7780  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   778       7790  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   779       7800  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   780       7810  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=41 ForwardAE=2 ForwardBE=0
+   781       7820  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   782       7830  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   783       7840  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000041 ForwardAE=2 ForwardBE=0
+   784       7850  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   785       7860  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   786       7870  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   787       7880  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000016b ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   788       7890  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   789       7900  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000016c ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   790       7910  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   791       7920  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=53 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   792       7930  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000016c ForwardAE=0 ForwardBE=0
+   793       7940  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   794       7950  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   795       7960  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   796       7970  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=53 ForwardAE=2 ForwardBE=0
+   797       7980  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   798       7990  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   799       8000  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000053 ForwardAE=2 ForwardBE=0
+   800       8010  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   801       8020  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   802       8030  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   803       8040  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000016c ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   804       8050  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   805       8060  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000016d ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   806       8070  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   807       8080  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=53 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   808       8090  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000016d ForwardAE=0 ForwardBE=0
+   809       8100  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   810       8110  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   811       8120  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   812       8130  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=53 ForwardAE=2 ForwardBE=0
+   813       8140  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   814       8150  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   815       8160  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000053 ForwardAE=2 ForwardBE=0
+   816       8170  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   817       8180  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   818       8190  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   819       8200  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000016d ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   820       8210  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   821       8220  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000016e ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   822       8230  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   823       8240  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=20 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   824       8250  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000016e ForwardAE=0 ForwardBE=0
+   825       8260  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   826       8270  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   827       8280  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   828       8290  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=20 ForwardAE=2 ForwardBE=0
+   829       8300  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   830       8310  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   831       8320  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000020 ForwardAE=2 ForwardBE=0
+   832       8330  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   833       8340  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   834       8350  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   835       8360  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000016e ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   836       8370  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   837       8380  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000016f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   838       8390  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   839       8400  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=74 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   840       8410  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000016f ForwardAE=0 ForwardBE=0
+   841       8420  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   842       8430  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   843       8440  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   844       8450  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=74 ForwardAE=2 ForwardBE=0
+   845       8460  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   846       8470  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   847       8480  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000074 ForwardAE=2 ForwardBE=0
+   848       8490  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   849       8500  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   850       8510  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   851       8520  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000016f ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   852       8530  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   853       8540  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000170 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   854       8550  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   855       8560  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=30 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   856       8570  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000170 ForwardAE=0 ForwardBE=0
+   857       8580  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   858       8590  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   859       8600  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   860       8610  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=30 ForwardAE=2 ForwardBE=0
+   861       8620  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   862       8630  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   863       8640  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000030 ForwardAE=2 ForwardBE=0
+   864       8650  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   865       8660  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   866       8670  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   867       8680  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000170 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   868       8690  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   869       8700  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000171 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   870       8710  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   871       8720  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=35 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   872       8730  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000171 ForwardAE=0 ForwardBE=0
+   873       8740  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   874       8750  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   875       8760  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   876       8770  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=35 ForwardAE=2 ForwardBE=0
+   877       8780  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   878       8790  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   879       8800  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000035 ForwardAE=2 ForwardBE=0
+   880       8810  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   881       8820  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   882       8830  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   883       8840  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000171 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   884       8850  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   885       8860  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000172 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   886       8870  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   887       8880  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=5f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   888       8890  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000172 ForwardAE=0 ForwardBE=0
+   889       8900  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   890       8910  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   891       8920  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   892       8930  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=5f ForwardAE=2 ForwardBE=0
+   893       8940  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   894       8950  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   895       8960  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000005f ForwardAE=2 ForwardBE=0
+   896       8970  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   897       8980  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   898       8990  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   899       9000  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000172 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   900       9010  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   901       9020  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000173 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   902       9030  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   903       9040  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=7a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   904       9050  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000173 ForwardAE=0 ForwardBE=0
+   905       9060  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   906       9070  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   907       9080  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   908       9090  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=7a ForwardAE=2 ForwardBE=0
+   909       9100  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   910       9110  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   911       9120  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000007a ForwardAE=2 ForwardBE=0
+   912       9130  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   913       9140  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   914       9150  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   915       9160  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000173 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   916       9170  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   917       9180  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000174 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   918       9190  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   919       9200  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=69 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   920       9210  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000174 ForwardAE=0 ForwardBE=0
+   921       9220  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   922       9230  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   923       9240  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   924       9250  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=69 ForwardAE=2 ForwardBE=0
+   925       9260  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   926       9270  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   927       9280  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000069 ForwardAE=2 ForwardBE=0
+   928       9290  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   929       9300  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   930       9310  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   931       9320  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000174 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   932       9330  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   933       9340  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000175 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   934       9350  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   935       9360  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=63 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   936       9370  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000175 ForwardAE=0 ForwardBE=0
+   937       9380  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   938       9390  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   939       9400  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   940       9410  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=63 ForwardAE=2 ForwardBE=0
+   941       9420  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   942       9430  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   943       9440  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000063 ForwardAE=2 ForwardBE=0
+   944       9450  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   945       9460  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   946       9470  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   947       9480  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000175 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   948       9490  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   949       9500  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000176 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   950       9510  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   951       9520  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=6f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   952       9530  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000176 ForwardAE=0 ForwardBE=0
+   953       9540  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   954       9550  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   955       9560  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   956       9570  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=6f ForwardAE=2 ForwardBE=0
+   957       9580  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   958       9590  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   959       9600  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000006f ForwardAE=2 ForwardBE=0
+   960       9610  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   961       9620  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   962       9630  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   963       9640  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000176 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   964       9650  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   965       9660  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000177 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   966       9670  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   967       9680  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=6e ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   968       9690  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000177 ForwardAE=0 ForwardBE=0
+   969       9700  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   970       9710  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   971       9720  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   972       9730  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=6e ForwardAE=2 ForwardBE=0
+   973       9740  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   974       9750  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   975       9760  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000006e ForwardAE=2 ForwardBE=0
+   976       9770  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   977       9780  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   978       9790  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   979       9800  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000177 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   980       9810  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   981       9820  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000178 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   982       9830  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   983       9840  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=64 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   984       9850  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000178 ForwardAE=0 ForwardBE=0
+   985       9860  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   986       9870  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+   987       9880  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   988       9890  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=64 ForwardAE=2 ForwardBE=0
+   989       9900  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   990       9910  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+   991       9920  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000064 ForwardAE=2 ForwardBE=0
+   992       9930  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   993       9940  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   994       9950  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   995       9960  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000178 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+   996       9970  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   997       9980  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=80000179 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+   998       9990  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+   999      10000  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=5f ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1000      10010  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=80000179 ForwardAE=0 ForwardBE=0
+  1001      10020  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1002      10030  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+  1003      10040  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1004      10050  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=5f ForwardAE=2 ForwardBE=0
+  1005      10060  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1006      10070  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1007      10080  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000005f ForwardAE=2 ForwardBE=0
+  1008      10090  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1009      10100  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1010      10110  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1011      10120  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=80000179 ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+  1012      10130  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1013      10140  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000017a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1014      10150  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1015      10160  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=7a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1016      10170  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000017a ForwardAE=0 ForwardBE=0
+  1017      10180  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1018      10190  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+  1019      10200  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1020      10210  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=7a ForwardAE=2 ForwardBE=0
+  1021      10220  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1022      10230  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1023      10240  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000007a ForwardAE=2 ForwardBE=0
+  1024      10250  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1025      10260  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1026      10270  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1027      10280  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000017a ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+  1028      10290  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1029      10300  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000017b ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1030      10310  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1031      10320  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=62 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1032      10330  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000017b ForwardAE=0 ForwardBE=0
+  1033      10340  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1034      10350  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+  1035      10360  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1036      10370  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=62 ForwardAE=2 ForwardBE=0
+  1037      10380  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1038      10390  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1039      10400  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=101000000000062 ForwardAE=2 ForwardBE=0
+  1040      10410  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1041      10420  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1042      10430  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1043      10440  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000017b ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+  1044      10450  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1045      10460  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000017c ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1046      10470  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1047      10480  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=a ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1048      10490  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=58000ef ForwardedSrcAE=80005ff0 ForwardedSrcBE=8000017c ForwardAE=0 ForwardBE=0
+  1049      10500  PC=800000d8  00513023  (버블/플러시)                            PCE=800000da InstrD=1010029b ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1050      10510  PC=800000da  058000ef  jal ra,80000132 <report_putchar>    PCE=80000132 InstrD=3029293 ForwardedSrcAE=0 ForwardedSrcBE=800000de ForwardAE=0 ForwardBE=2
+  1051      10520  PC=80000132  1010029b  addiw t0,zero,257                   PCE=80000136 InstrD=a2e2b3 ForwardedSrcAE=101 ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1052      10530  PC=80000136  03029293  (버블/플러시)                            PCE=80000138 InstrD=1317 ForwardedSrcAE=101000000000000 ForwardedSrcBE=a ForwardAE=2 ForwardBE=0
+  1053      10540  PC=80000138  00a2e2b3  or t0,t0,a0                         PCE=8000013c InstrD=ec430313 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1054      10550  PC=8000013c  00001317  auipc t1,0x1                        PCE=80000140 InstrD=533023 ForwardedSrcAE=8000113c ForwardedSrcBE=0 ForwardAE=2 ForwardBE=0
+  1055      10560  PC=80000140  ec430313  addi t1,t1,-316                     PCE=80000144 InstrD=8067 ForwardedSrcAE=80001000 ForwardedSrcBE=10100000000000a ForwardAE=2 ForwardBE=0
+  1056      10570  PC=80000144  00533023  sd t0,0(t1)                         PCE=80000148 InstrD=13283 ForwardedSrcAE=800000de ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1057      10580  PC=80000148  00008067  (버블/플러시)                            PCE=800000de InstrD=128293 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1058      10590  PC=800000de  00013283  (버블/플러시)                            PCE=800000e0 InstrD=128293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1059      10600  PC=800000e0  00000013  (버블/플러시)                            PCE=800000e0 InstrD=ff1ff06f ForwardedSrcAE=8000017c ForwardedSrcBE=800000de ForwardAE=1 ForwardBE=0
+  1060      10610  PC=800000e0  00128293  (버블/플러시)                            PCE=800000e2 InstrD=2c503 ForwardedSrcAE=c0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1061      10620  PC=800000e2  ff1ff06f  (버블/플러시)                            PCE=800000d2 InstrD=50763 ForwardedSrcAE=8000017d ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1062      10630  PC=800000d2  0002c503  lbu a0,0(t0)                        PCE=800000d6 InstrD=50763 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1063      10640  PC=800000d6  00000013  (버블/플러시)                            PCE=800000d6 InstrD=513023 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1064      10650  PC=800000d6  00050763  (버블/플러시)                            PCE=800000d8 InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1065      10660  PC=800000d8  00000013  (버블/플러시)                            PCE=0 InstrD=813083 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1066      10670  PC=00000000  00000013                                      PCE=800000e4 InstrD=1010113 ForwardedSrcAE=80005ff0 ForwardedSrcBE=f ForwardAE=0 ForwardBE=0
+  1067      10680  PC=800000e4  00813083  (버블/플러시)                            PCE=800000e6 InstrD=8067 ForwardedSrcAE=80005ff0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1068      10690  PC=800000e6  01010113  (버블/플러시)                            PCE=800000e8 InstrD=1297 ForwardedSrcAE=80000098 ForwardedSrcBE=0 ForwardAE=1 ForwardBE=0
+  1069      10700  PC=800000e8  00008067  (버블/플러시)                            PCE=80000098 InstrD=f6828293 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1070      10710  PC=80000098  00001297  auipc t0,0x1                        PCE=8000009c InstrD=100313 ForwardedSrcAE=80001098 ForwardedSrcBE=f ForwardAE=2 ForwardBE=0
+  1071      10720  PC=8000009c  f6828293  addi t0,t0,-152                     PCE=800000a0 InstrD=62b023 ForwardedSrcAE=0 ForwardedSrcBE=80000098 ForwardAE=0 ForwardBE=0
+  1072      10730  PC=800000a0  00100313  addi t1,zero,1                      PCE=800000a4 InstrD=6f ForwardedSrcAE=80001000 ForwardedSrcBE=1 ForwardAE=1 ForwardBE=2
+  1073      10740  PC=800000a4  0062b023  sd t1,0(t0)                         PCE=800000a8 InstrD=517 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1074      10750  PC=800000a8  0000006f  jal zero,800000a8 <rvtest_entry_point+0xa8>  PCE=800000ac InstrD=13 ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1075      10760  PC=800000ac  00000013  (버블/플러시)                            PCE=0 InstrD=6f ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1076      10770  PC=00000000  00000013                                      PCE=800000a8 InstrD=6f ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1077      10780  PC=800000a8  0000006f  jal zero,800000a8 <rvtest_entry_point+0xa8>  PCE=800000a8 InstrD=6f ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0
+  1078      10790  PC=800000a8  0000006f  jal zero,800000a8 <rvtest_entry_point+0xa8>  PCE=800000a8 InstrD=6f ForwardedSrcAE=0 ForwardedSrcBE=0 ForwardAE=0 ForwardBE=0

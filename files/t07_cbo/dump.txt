@@ -1,0 +1,1052 @@
+# t07_cbo RTL dump (클럭 상승 엣지마다 샘플)
+# 원본: t07_cbo.vcd, 사이클 0..1047
+# 표기: '*신호' = 1, '.신호' = 0, '이름=16진수' = 여러 비트 값
+# 사이클   시간(ps)  PC        명령      니모닉                              나머지 신호
+     0         10  PC=00000000  00000000                                      InstrD=0 HADDR=0 HWDATA=0 .HWRITE .HREADY .DCacheMiss .DCacheAccess *StallM
+     1         20  PC=00000000  00000000                                      InstrD=0 HADDR=0 HWDATA=0 .HWRITE .HREADY .DCacheMiss .DCacheAccess .StallM
+     2         30  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     3         40  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     4         50  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     5         60  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     6         70  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     7         80  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     8         90  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+     9        100  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    10        110  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    11        120  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    12        130  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    13        140  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    14        150  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    15        160  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    16        170  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    17        180  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    18        190  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    19        200  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    20        210  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    21        220  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    22        230  PC=00000000  00000000                                      InstrD=13 HADDR=80000000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    23        240  PC=00000000  00000000                                      InstrD=13 HADDR=80000008 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    24        250  PC=00000000  00000000                                      InstrD=13 HADDR=80000010 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    25        260  PC=00000000  00000000                                      InstrD=13 HADDR=80000018 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    26        270  PC=00000000  00000000                                      InstrD=13 HADDR=80000020 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    27        280  PC=00000000  00000000                                      InstrD=13 HADDR=80000028 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    28        290  PC=00000000  00000000                                      InstrD=13 HADDR=80000030 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    29        300  PC=00000000  00000000                                      InstrD=13 HADDR=80000038 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    30        310  PC=00000000  00000000                                      InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    31        320  PC=00000000  00000000                                      InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    32        330  PC=00000000  00000000                                      InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    33        340  PC=00000000  00000000                                      InstrD=6117 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    34        350  PC=00000000  00000013                                      InstrD=10113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    35        360  PC=80000000  00006117  auipc sp,0x6                        InstrD=c0002473 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    36        370  PC=80000004  00010113  addi sp,sp,0                        InstrD=6297 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    37        380  PC=80000008  c0002473  csrrs s0,cycle,zero                 InstrD=ff428293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    38        390  PC=8000000c  00006297  auipc t0,0x6                        InstrD=3f2f313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    39        400  PC=80000010  ff428293  addi t0,t0,-12                      InstrD=c031063 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    40        410  PC=80000014  03f2f313  andi t1,t0,63                       InstrD=fff00313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    41        420  PC=80000018  0c031063  bne t1,zero,800000d8 <fail>         InstrD=62b023 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    42        430  PC=8000001c  fff00313  addi t1,zero,-1                     InstrD=62b423 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    43        440  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    44        450  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006008 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    45        460  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006010 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    46        470  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006018 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    47        480  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006020 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    48        490  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006028 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    49        500  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006030 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    50        510  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=80006038 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    51        520  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    52        530  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    53        540  PC=80000020  0062b023  sd t1,0(t0)                         InstrD=62b823 HADDR=0 HWDATA=0 .HWRITE *HREADY *DCacheMiss *DCacheAccess .StallM
+    54        550  PC=80000024  0062b423  sd t1,8(t0)                         InstrD=62bc23 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    55        560  PC=80000028  0062b823  sd t1,16(t0)                        InstrD=262b023 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    56        570  PC=8000002c  0062bc23  sd t1,24(t0)                        InstrD=262b423 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    57        580  PC=80000030  0262b023  sd t1,32(t0)                        InstrD=262b823 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    58        590  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000040 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    59        600  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000048 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    60        610  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000050 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    61        620  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000058 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    62        630  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000060 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    63        640  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000068 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    64        650  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000070 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    65        660  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=80000078 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    66        670  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    67        680  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    68        690  PC=80000034  0262b423  sd t1,40(t0)                        InstrD=262bc23 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    69        700  PC=80000038  0262b823  sd t1,48(t0)                        InstrD=12a00f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    70        710  PC=8000003c  0262bc23  sd t1,56(t0)                        InstrD=22a00f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    71        720  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    72        730  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006000 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    73        740  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006008 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    74        750  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006010 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    75        760  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006018 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    76        770  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006020 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    77        780  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006028 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    78        790  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006030 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    79        800  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=80006038 HWDATA=ffffffffffffffff *HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    80        810  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=0 HWDATA=ffffffffffffffff .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    81        820  PC=80000040  0012a00f  cbo.clean (t0)                      InstrD=2a00f HADDR=0 HWDATA=ffffffffffffffff .HWRITE *HREADY *DCacheMiss .DCacheAccess .StallM
+    82        830  PC=80000044  0022a00f  cbo.flush (t0)                      InstrD=42a00f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    83        840  PC=80000044  0022a00f  cbo.flush (t0)                      InstrD=42a00f HADDR=0 HWDATA=ffffffffffffffff .HWRITE *HREADY *DCacheMiss .DCacheAccess .StallM
+    84        850  PC=80000048  0002a00f  cbo.inval (t0)                      InstrD=2b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    85        860  PC=80000048  0002a00f  cbo.inval (t0)                      InstrD=2b303 HADDR=0 HWDATA=0 .HWRITE *HREADY *DCacheMiss .DCacheAccess .StallM
+    86        870  PC=8000004c  0042a00f  cbo.zero (t0)                       InstrD=8031263 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+    87        880  PC=8000004c  0042a00f  cbo.zero (t0)                       InstrD=8031263 HADDR=0 HWDATA=ffffffffffffffff .HWRITE *HREADY *DCacheMiss .DCacheAccess .StallM
+    88        890  PC=80000050  0002b303  ld t1,0(t0)                         InstrD=8031263 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    89        900  PC=80000054  00000013  (버블/플러시)                            InstrD=82b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    90        910  PC=80000054  08031263  bne t1,zero,800000d8 <fail>         InstrD=6031e63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    91        920  PC=80000058  0082b303  ld t1,8(t0)                         InstrD=6031e63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    92        930  PC=8000005c  00000013  (버블/플러시)                            InstrD=102b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    93        940  PC=8000005c  06031e63  bne t1,zero,800000d8 <fail>         InstrD=6031a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    94        950  PC=80000060  0102b303  ld t1,16(t0)                        InstrD=6031a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    95        960  PC=80000064  00000013  (버블/플러시)                            InstrD=182b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    96        970  PC=80000064  06031a63  bne t1,zero,800000d8 <fail>         InstrD=6031663 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    97        980  PC=80000068  0182b303  ld t1,24(t0)                        InstrD=6031663 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+    98        990  PC=8000006c  00000013  (버블/플러시)                            InstrD=202b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+    99       1000  PC=8000006c  06031663  bne t1,zero,800000d8 <fail>         InstrD=6031263 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   100       1010  PC=80000070  0202b303  ld t1,32(t0)                        InstrD=6031263 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   101       1020  PC=80000074  00000013  (버블/플러시)                            InstrD=282b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   102       1030  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=80000080 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   103       1040  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=80000088 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   104       1050  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=80000090 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   105       1060  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=80000098 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   106       1070  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=800000a0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   107       1080  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=800000a8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   108       1090  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=800000b0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   109       1100  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=800000b8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   110       1110  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   111       1120  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   112       1130  PC=80000074  06031263  bne t1,zero,800000d8 <fail>         InstrD=4031e63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   113       1140  PC=80000078  0282b303  ld t1,40(t0)                        InstrD=4031e63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   114       1150  PC=8000007c  00000013  (버블/플러시)                            InstrD=302b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   115       1160  PC=8000007c  04031e63  bne t1,zero,800000d8 <fail>         InstrD=4031a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   116       1170  PC=80000080  0302b303  ld t1,48(t0)                        InstrD=4031a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   117       1180  PC=80000084  00000013  (버블/플러시)                            InstrD=382b303 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   118       1190  PC=80000084  04031a63  bne t1,zero,800000d8 <fail>         InstrD=4031663 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   119       1200  PC=80000088  0382b303  ld t1,56(t0)                        InstrD=4031663 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   120       1210  PC=8000008c  00000013  (버블/플러시)                            InstrD=c00024f3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   121       1220  PC=8000008c  04031663  bne t1,zero,800000d8 <fail>         InstrD=40848933 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   122       1230  PC=80000090  c00024f3  csrrs s1,cycle,zero                 InstrD=40848933 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   123       1240  PC=80000094  00000013  (버블/플러시)                            InstrD=517 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   124       1250  PC=80000094  40848933  sub s2,s1,s0                        InstrD=de50513 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   125       1260  PC=80000098  00000517  auipc a0,0x0                        InstrD=58000ef HADDR=0 HWDATA=f0f0f0f0f0f0f0f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   126       1270  PC=8000009c  0de50513  addi a0,a0,222                      InstrD=90513 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   127       1280  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000c0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   128       1290  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000c8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   129       1300  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000d0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   130       1310  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000d8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   131       1320  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000e0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   132       1330  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000e8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   133       1340  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000f0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   134       1350  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=800000f8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   135       1360  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   136       1370  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   137       1380  PC=800000a0  058000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   138       1390  PC=800000a4  00000013  (버블/플러시)                            InstrD=ff010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   139       1400  PC=00000000  00000013                                      InstrD=113423 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   140       1410  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   141       1420  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000100 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   142       1430  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000108 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   143       1440  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000110 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   144       1450  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000118 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   145       1460  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000120 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   146       1470  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000128 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   147       1480  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000130 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   148       1490  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=80000138 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   149       1500  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   150       1510  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   151       1520  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   152       1530  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005fc0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   153       1540  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005fc8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   154       1550  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005fd0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   155       1560  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005fd8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   156       1570  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005fe0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   157       1580  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005fe8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   158       1590  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005ff0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   159       1600  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=80005ff8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   160       1610  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   161       1620  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   162       1630  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY *DCacheMiss *DCacheAccess .StallM
+   163       1640  PC=800000fc  00a002b3  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   164       1650  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000140 HWDATA=7676767676767676 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   165       1660  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000148 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   166       1670  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000150 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   167       1680  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000158 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   168       1690  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000160 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   169       1700  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000168 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   170       1710  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000170 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   171       1720  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000178 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   172       1730  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   173       1740  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   174       1750  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=4552808200533023 .HWRITE *HREADY *DCacheMiss *DCacheAccess .StallM
+   175       1760  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=4552808200533023 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   176       1770  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   177       1780  PC=80000104  00513023  (버블/플러시)                            InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   178       1790  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000140 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   179       1800  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000148 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   180       1810  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000150 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   181       1820  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000158 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   182       1830  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000160 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   183       1840  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000168 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   184       1850  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000170 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   185       1860  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=80000178 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   186       1870  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   187       1880  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   188       1890  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   189       1900  PC=8000010a  00000013  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   190       1910  PC=00000000  00000013                                      InstrD=3029293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   191       1920  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   192       1930  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   193       1940  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   194       1950  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5200000052 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   195       1960  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   196       1970  PC=80000170  00533023  sd t0,0(t1)                         InstrD=1412503 HADDR=80001000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   197       1980  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001008 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   198       1990  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001010 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   199       2000  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001018 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   200       2010  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001020 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   201       2020  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001028 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   202       2030  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001030 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   203       2040  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=80001038 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   204       2050  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   205       2060  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   206       2070  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY *DCacheMiss *DCacheAccess .StallM
+   207       2080  PC=80000174  00008067  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   208       2090  PC=80000176  00000013                                      InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   209       2100  PC=00000000  00000013                                      InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   210       2110  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   211       2120  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000176 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   212       2130  PC=8000010c  00128293  (버블/플러시)                            InstrD=813083 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   213       2140  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   214       2150  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   215       2160  PC=80000110  00000013  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   216       2170  PC=00000000  00000013                                      InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   217       2180  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   218       2190  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=4552808200533023 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   219       2200  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   220       2210  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   221       2220  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000176 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   222       2230  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   223       2240  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   224       2250  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   225       2260  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=4500000045 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   226       2270  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   227       2280  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   228       2290  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000052 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   229       2300  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   230       2310  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000177 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   231       2320  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   232       2330  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   233       2340  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   234       2350  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   235       2360  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   236       2370  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   237       2380  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   238       2390  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000177 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   239       2400  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   240       2410  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   241       2420  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   242       2430  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5000000050 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   243       2440  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   244       2450  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   245       2460  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000045 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   246       2470  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   247       2480  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000178 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   248       2490  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   249       2500  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   250       2510  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   251       2520  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   252       2530  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   253       2540  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   254       2550  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   255       2560  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000178 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   256       2570  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   257       2580  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   258       2590  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   259       2600  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=4f0000004f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   260       2610  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   261       2620  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   262       2630  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000050 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   263       2640  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   264       2650  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000179 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   265       2660  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   266       2670  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   267       2680  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   268       2690  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   269       2700  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   270       2710  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   271       2720  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   272       2730  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000179 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   273       2740  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   274       2750  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   275       2760  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   276       2770  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5200000052 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   277       2780  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   278       2790  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   279       2800  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000004f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   280       2810  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   281       2820  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000017a .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   282       2830  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   283       2840  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   284       2850  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   285       2860  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   286       2870  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   287       2880  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   288       2890  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   289       2900  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000017a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   290       2910  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   291       2920  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   292       2930  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   293       2940  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5400000054 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   294       2950  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   295       2960  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   296       2970  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000052 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   297       2980  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   298       2990  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000017b .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   299       3000  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   300       3010  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   301       3020  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   302       3030  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   303       3040  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   304       3050  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   305       3060  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   306       3070  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000017b .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   307       3080  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   308       3090  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   309       3100  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   310       3110  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=2000000020 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   311       3120  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   312       3130  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   313       3140  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000054 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   314       3150  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   315       3160  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000017c .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   316       3170  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   317       3180  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   318       3190  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   319       3200  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   320       3210  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   321       3220  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   322       3230  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   323       3240  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000017c .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   324       3250  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   325       3260  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   326       3270  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   327       3280  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6300000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   328       3290  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   329       3300  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   330       3310  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000020 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   331       3320  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   332       3330  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000017d .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   333       3340  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   334       3350  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   335       3360  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   336       3370  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   337       3380  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   338       3390  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   339       3400  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   340       3410  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000017d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   341       3420  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   342       3430  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   343       3440  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   344       3450  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6200000062 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   345       3460  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   346       3470  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   347       3480  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   348       3490  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   349       3500  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000017e .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   350       3510  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   351       3520  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   352       3530  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   353       3540  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   354       3550  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62632054524f50 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   355       3560  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   356       3570  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   357       3580  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000017e .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   358       3590  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   359       3600  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   360       3610  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   361       3620  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6f0000006f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   362       3630  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   363       3640  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   364       3650  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000062 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   365       3660  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   366       3670  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000017f .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   367       3680  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   368       3690  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   369       3700  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   370       3710  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000180 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   371       3720  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000188 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   372       3730  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000190 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   373       3740  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=80000198 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   374       3750  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=800001a0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   375       3760  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=800001a8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   376       3770  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=800001b0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   377       3780  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=800001b8 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   378       3790  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   379       3800  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   380       3810  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY *DCacheMiss *DCacheAccess .StallM
+   381       3820  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   382       3830  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   383       3840  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   384       3850  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000017f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   385       3860  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   386       3870  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   387       3880  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   388       3890  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5f0000005f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   389       3900  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   390       3910  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   391       3920  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000006f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   392       3930  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   393       3940  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000180 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   394       3950  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   395       3960  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   396       3970  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   397       3980  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   398       3990  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   399       4000  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   400       4010  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   401       4020  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000180 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   402       4030  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   403       4040  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   404       4050  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   405       4060  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=7300000073 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   406       4070  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   407       4080  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   408       4090  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000005f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   409       4100  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   410       4110  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000181 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   411       4120  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   412       4130  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   413       4140  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   414       4150  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   415       4160  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   416       4170  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   417       4180  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   418       4190  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000181 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   419       4200  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   420       4210  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   421       4220  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   422       4230  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6500000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   423       4240  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   424       4250  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   425       4260  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000073 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   426       4270  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   427       4280  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000182 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   428       4290  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   429       4300  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   430       4310  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   431       4320  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   432       4330  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   433       4340  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   434       4350  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   435       4360  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000182 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   436       4370  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   437       4380  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   438       4390  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   439       4400  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=7100000071 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   440       4410  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   441       4420  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   442       4430  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   443       4440  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   444       4450  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000183 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   445       4460  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   446       4470  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   447       4480  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   448       4490  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   449       4500  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   450       4510  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   451       4520  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   452       4530  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000183 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   453       4540  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   454       4550  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   455       4560  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   456       4570  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=7500000075 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   457       4580  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   458       4590  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   459       4600  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000071 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   460       4610  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   461       4620  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000184 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   462       4630  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   463       4640  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   464       4650  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   465       4660  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   466       4670  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   467       4680  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   468       4690  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   469       4700  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000184 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   470       4710  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   471       4720  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   472       4730  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   473       4740  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6500000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   474       4750  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   475       4760  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   476       4770  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000075 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   477       4780  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   478       4790  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000185 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   479       4800  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   480       4810  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   481       4820  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   482       4830  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   483       4840  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   484       4850  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   485       4860  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   486       4870  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000185 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   487       4880  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   488       4890  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   489       4900  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   490       4910  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6e0000006e .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   491       4920  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   492       4930  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   493       4940  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   494       4950  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   495       4960  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000186 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   496       4970  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   497       4980  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   498       4990  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   499       5000  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   500       5010  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=636e65757165735f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   501       5020  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   502       5030  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   503       5040  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000186 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   504       5050  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   505       5060  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   506       5070  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   507       5080  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6300000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   508       5090  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   509       5100  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   510       5110  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000006e .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   511       5120  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   512       5130  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000187 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   513       5140  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   514       5150  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   515       5160  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   516       5170  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   517       5180  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   518       5190  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   519       5200  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   520       5210  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000187 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   521       5220  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   522       5230  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   523       5240  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   524       5250  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6500000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   525       5260  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   526       5270  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   527       5280  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   528       5290  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   529       5300  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000188 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   530       5310  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   531       5320  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   532       5330  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   533       5340  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   534       5350  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   535       5360  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   536       5370  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   537       5380  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000188 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   538       5390  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   539       5400  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   540       5410  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   541       5420  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5f0000005f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   542       5430  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   543       5440  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   544       5450  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   545       5460  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   546       5470  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000189 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   547       5480  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   548       5490  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   549       5500  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   550       5510  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   551       5520  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   552       5530  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   553       5540  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   554       5550  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000189 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   555       5560  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   556       5570  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   557       5580  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   558       5590  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6300000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   559       5600  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   560       5610  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   561       5620  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000005f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   562       5630  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   563       5640  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000018a .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   564       5650  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   565       5660  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   566       5670  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   567       5680  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   568       5690  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   569       5700  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   570       5710  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   571       5720  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000018a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   572       5730  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   573       5740  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   574       5750  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   575       5760  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=7900000079 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   576       5770  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   577       5780  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   578       5790  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   579       5800  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   580       5810  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000018b .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   581       5820  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   582       5830  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   583       5840  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   584       5850  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   585       5860  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   586       5870  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   587       5880  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   588       5890  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000018b .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   589       5900  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   590       5910  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   591       5920  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   592       5930  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6300000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   593       5940  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   594       5950  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   595       5960  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000079 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   596       5970  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   597       5980  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000018c .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   598       5990  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   599       6000  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   600       6010  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   601       6020  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   602       6030  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   603       6040  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   604       6050  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   605       6060  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000018c .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   606       6070  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   607       6080  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   608       6090  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   609       6100  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6c0000006c .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   610       6110  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   611       6120  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   612       6130  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   613       6140  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   614       6150  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000018d .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   615       6160  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   616       6170  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   617       6180  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   618       6190  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   619       6200  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   620       6210  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   621       6220  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   622       6230  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000018d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   623       6240  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   624       6250  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   625       6260  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   626       6270  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6500000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   627       6280  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   628       6290  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   629       6300  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000006c .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   630       6310  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   631       6320  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000018e .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   632       6330  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   633       6340  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   634       6350  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   635       6360  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   636       6370  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=73656c6379635f65 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   637       6380  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   638       6390  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   639       6400  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000018e .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   640       6410  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   641       6420  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   642       6430  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   643       6440  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=7300000073 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   644       6450  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   645       6460  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   646       6470  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000065 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   647       6480  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   648       6490  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000018f .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   649       6500  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   650       6510  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   651       6520  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   652       6530  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   653       6540  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   654       6550  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   655       6560  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   656       6570  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000018f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   657       6580  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   658       6590  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   659       6600  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   660       6610  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=3d0000003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   661       6620  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   662       6630  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   663       6640  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000073 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   664       6650  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   665       6660  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000190 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   666       6670  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   667       6680  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   668       6690  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   669       6700  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   670       6710  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   671       6720  PC=80000102  00050763  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   672       6730  PC=80000104  00000013  (버블/플러시)                            InstrD=813083 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   673       6740  PC=00000000  00000013                                      InstrD=1010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   674       6750  PC=80000110  00813083  (버블/플러시)                            InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   675       6760  PC=80000112  01010113  (버블/플러시)                            InstrD=ff010113 HADDR=0 HWDATA=800000a4 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   676       6770  PC=80000114  00008067  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   677       6780  PC=80000116  00000013  (버블/플러시)                            InstrD=90513 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   678       6790  PC=00000000  00000013                                      InstrD=6e000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   679       6800  PC=800000a4  00090513  addi a0,s2,0                        InstrD=517 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   680       6810  PC=800000a8  06e000ef  jal ra,80000116 <report_print_u64>  InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   681       6820  PC=800000ac  00000013  (버블/플러시)                            InstrD=ff010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   682       6830  PC=00000000  00000013                                      InstrD=113423 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   683       6840  PC=80000116  ff010113  (버블/플러시)                            InstrD=4397 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   684       6850  PC=80000118  00113423  (버블/플러시)                            InstrD=ee638393 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   685       6860  PC=8000011a  00004397  auipc t2,0x4                        InstrD=1438393 HADDR=0 HWDATA=800000a4 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   686       6870  PC=8000011e  ee638393  addi t2,t2,-282                     InstrD=a00e13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   687       6880  PC=80000122  01438393  (버블/플러시)                            InstrD=3c57eb3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   688       6890  PC=80000124  00a00e13  (버블/플러시)                            InstrD=3c55533 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   689       6900  PC=80000126  00000013  (버블/플러시)                            InstrD=3c55533 HADDR=0 HWDATA=5555555555555555 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   690       6910  PC=80000126  00000013  (버블/플러시)                            InstrD=3c55533 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   691       6920  PC=80000126  03c57eb3  remu t4,a0,t3                       InstrD=30e8e93 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   692       6930  PC=8000012a  00000013  (버블/플러시)                            InstrD=30e8e93 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   693       6940  PC=8000012a  00000013  (버블/플러시)                            InstrD=30e8e93 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   694       6950  PC=8000012a  03c55533  divu a0,a0,t3                       InstrD=fff38393 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   695       6960  PC=8000012e  030e8e93  addi t4,t4,48                       InstrD=1d38023 HADDR=0 HWDATA=a000a000a000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   696       6970  PC=80000132  fff38393  (버블/플러시)                            InstrD=fe0517e3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   697       6980  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=4f17 HADDR=80004000 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   698       6990  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004008 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   699       7000  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004010 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   700       7010  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004018 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   701       7020  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004020 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   702       7030  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004028 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   703       7040  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004030 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   704       7050  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=80004038 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   705       7060  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   706       7070  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   707       7080  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY *DCacheMiss *DCacheAccess .StallM
+   708       7090  PC=80000138  fe0517e3  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   709       7100  PC=8000013a  00000013  (버블/플러시)                            InstrD=3c57eb3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   710       7110  PC=00000000  00000013                                      InstrD=3c55533 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   711       7120  PC=80000126  00000013  (버블/플러시)                            InstrD=3c55533 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   712       7130  PC=80000126  00000013  (버블/플러시)                            InstrD=3c55533 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   713       7140  PC=80000126  03c57eb3  remu t4,a0,t3                       InstrD=30e8e93 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   714       7150  PC=8000012a  00000013  (버블/플러시)                            InstrD=30e8e93 HADDR=0 HWDATA=a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   715       7160  PC=8000012a  00000013  (버블/플러시)                            InstrD=30e8e93 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   716       7170  PC=8000012a  03c55533  divu a0,a0,t3                       InstrD=fff38393 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   717       7180  PC=8000012e  030e8e93  addi t4,t4,48                       InstrD=1d38023 HADDR=0 HWDATA=a000a000a000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   718       7190  PC=80000132  fff38393  (버블/플러시)                            InstrD=fe0517e3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   719       7200  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=4f17 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   720       7210  PC=80000134  01d38023  sb t4,0(t2)                         InstrD=4f17 HADDR=0 HWDATA=35000000 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   721       7220  PC=80000138  fe0517e3  (버블/플러시)                            InstrD=ec6f0f13 HADDR=0 HWDATA=35000000 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   722       7230  PC=8000013a  00004f17  auipc t5,0x4                        InstrD=14f0f13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   723       7240  PC=8000013e  ec6f0f13  addi t5,t5,-314                     InstrD=1e38a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   724       7250  PC=80000142  014f0f13  (버블/플러시)                            InstrD=3c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   725       7260  PC=80000144  01e38a63  beq t2,t5,80000158 <report_print_u64+0x42>  InstrD=713023 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   726       7270  PC=80000148  0003c503  lbu a0,0(t2)                        InstrD=10000ef HADDR=0 HWDATA=1414141414141414 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   727       7280  PC=8000014c  00713023  (버블/플러시)                            InstrD=13383 HADDR=0 HWDATA=35380000 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   728       7290  PC=8000014e  010000ef  jal ra,8000015e <report_putchar>    InstrD=13 HADDR=0 HWDATA=80000190 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   729       7300  PC=80000152  00000013  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   730       7310  PC=00000000  00000013                                      InstrD=3029293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   731       7320  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   732       7330  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=5252525252525252 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   733       7340  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   734       7350  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=3800000038 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   735       7360  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   736       7370  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13383 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   737       7380  PC=80000174  00008067  (버블/플러시)                            InstrD=138393 HADDR=0 HWDATA=10100000000003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   738       7390  PC=80000152  00013383  (버블/플러시)                            InstrD=138393 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   739       7400  PC=80000154  00000013  (버블/플러시)                            InstrD=fefff06f HADDR=0 HWDATA=80004012 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   740       7410  PC=80000154  00138393  (버블/플러시)                            InstrD=813083 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   741       7420  PC=80000156  fefff06f  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=5252525252525252 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   742       7430  PC=80000158  00000013  (버블/플러시)                            InstrD=1e38a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   743       7440  PC=00000000  00000013                                      InstrD=3c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   744       7450  PC=80000144  01e38a63  beq t2,t5,80000158 <report_print_u64+0x42>  InstrD=713023 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   745       7460  PC=80000148  0003c503  lbu a0,0(t2)                        InstrD=10000ef HADDR=0 HWDATA=1414141414141414 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   746       7470  PC=8000014c  00713023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=35380000 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   747       7480  PC=8000014e  010000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80004012 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   748       7490  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   749       7500  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=5252525252525252 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   750       7510  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   751       7520  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=3500000035 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   752       7530  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   753       7540  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13383 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   754       7550  PC=80000174  00008067  (버블/플러시)                            InstrD=138393 HADDR=0 HWDATA=101000000000038 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   755       7560  PC=80000152  00013383  (버블/플러시)                            InstrD=138393 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   756       7570  PC=80000154  00000013  (버블/플러시)                            InstrD=fefff06f HADDR=0 HWDATA=80004013 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   757       7580  PC=80000154  00138393  (버블/플러시)                            InstrD=1e38a63 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   758       7590  PC=80000156  fefff06f  (버블/플러시)                            InstrD=3c503 HADDR=0 HWDATA=5252525252525252 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   759       7600  PC=80000144  01e38a63  beq t2,t5,80000158 <report_print_u64+0x42>  InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   760       7610  PC=80000148  00000013  (버블/플러시)                            InstrD=813083 HADDR=0 HWDATA=1414141414141414 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   761       7620  PC=00000000  00000013                                      InstrD=1010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   762       7630  PC=80000158  00813083  (버블/플러시)                            InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   763       7640  PC=8000015a  01010113  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=800000ac .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   764       7650  PC=8000015c  00008067  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   765       7660  PC=8000015e  00000013  (버블/플러시)                            InstrD=517 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   766       7670  PC=00000000  00000013                                      InstrD=e650513 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   767       7680  PC=800000ac  00000517  auipc a0,0x0                        InstrD=44000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   768       7690  PC=800000b0  0e650513  addi a0,a0,230                      InstrD=517 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   769       7700  PC=800000b4  044000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   770       7710  PC=800000b8  00000013  (버블/플러시)                            InstrD=ff010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   771       7720  PC=00000000  00000013                                      InstrD=113423 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   772       7730  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   773       7740  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   774       7750  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   775       7760  PC=800000fc  00a002b3  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=800000ac .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   776       7770  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=9292929292929292 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   777       7780  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   778       7790  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   779       7800  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   780       7810  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80004013 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   781       7820  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   782       7830  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   783       7840  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   784       7850  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=a0000000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   785       7860  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   786       7870  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   787       7880  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000035 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   788       7890  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   789       7900  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000192 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   790       7910  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   791       7920  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   792       7930  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   793       7940  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   794       7950  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   795       7960  PC=80000102  00050763  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   796       7970  PC=80000104  00000013  (버블/플러시)                            InstrD=813083 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   797       7980  PC=00000000  00000013                                      InstrD=1010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   798       7990  PC=80000110  00813083  (버블/플러시)                            InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   799       8000  PC=80000112  01010113  (버블/플러시)                            InstrD=517 HADDR=0 HWDATA=800000b8 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   800       8010  PC=80000114  00008067  (버블/플러시)                            InstrD=dc50513 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   801       8020  PC=800000b8  00000517  auipc a0,0x0                        InstrD=38000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   802       8030  PC=800000bc  0dc50513  addi a0,a0,220                      InstrD=1297 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   803       8040  PC=800000c0  038000ef  jal ra,800000f8 <report_print_string>  InstrD=13 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   804       8050  PC=800000c4  00000013  (버블/플러시)                            InstrD=ff010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   805       8060  PC=00000000  00000013                                      InstrD=113423 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   806       8070  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   807       8080  PC=800000f8  ff010113  (버블/플러시)                            InstrD=a002b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   808       8090  PC=800000fa  00113423  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   809       8100  PC=800000fc  00a002b3  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=800000b8 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   810       8110  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=9494949494949494 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   811       8120  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   812       8130  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   813       8140  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   814       8150  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000192 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   815       8160  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   816       8170  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   817       8180  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   818       8190  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5000000050 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   819       8200  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   820       8210  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   821       8220  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   822       8230  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   823       8240  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000194 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   824       8250  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   825       8260  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   826       8270  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   827       8280  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   828       8290  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   829       8300  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   830       8310  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   831       8320  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000194 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   832       8330  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   833       8340  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   834       8350  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   835       8360  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=4100000041 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   836       8370  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   837       8380  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   838       8390  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000050 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   839       8400  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   840       8410  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000195 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   841       8420  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   842       8430  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   843       8440  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   844       8450  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   845       8460  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   846       8470  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   847       8480  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   848       8490  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000195 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   849       8500  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   850       8510  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   851       8520  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   852       8530  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5300000053 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   853       8540  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   854       8550  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   855       8560  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000041 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   856       8570  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   857       8580  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000196 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   858       8590  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   859       8600  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   860       8610  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   861       8620  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   862       8630  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=53534150000a003d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   863       8640  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   864       8650  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   865       8660  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000196 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   866       8670  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   867       8680  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   868       8690  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   869       8700  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5300000053 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   870       8710  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   871       8720  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   872       8730  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000053 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   873       8740  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   874       8750  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000197 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   875       8760  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   876       8770  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   877       8780  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   878       8790  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   879       8800  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   880       8810  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   881       8820  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   882       8830  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000197 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   883       8840  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   884       8850  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   885       8860  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   886       8870  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=2000000020 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   887       8880  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   888       8890  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   889       8900  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000053 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   890       8910  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   891       8920  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000198 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   892       8930  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   893       8940  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   894       8950  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   895       8960  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   896       8970  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   897       8980  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   898       8990  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   899       9000  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000198 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   900       9010  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   901       9020  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   902       9030  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   903       9040  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=7400000074 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   904       9050  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   905       9060  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   906       9070  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000020 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   907       9080  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   908       9090  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=80000199 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   909       9100  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   910       9110  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   911       9120  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   912       9130  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   913       9140  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   914       9150  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   915       9160  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   916       9170  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=80000199 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   917       9180  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   918       9190  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   919       9200  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   920       9210  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=3000000030 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   921       9220  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   922       9230  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   923       9240  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000074 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   924       9250  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   925       9260  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000019a .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   926       9270  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   927       9280  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   928       9290  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   929       9300  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   930       9310  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   931       9320  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   932       9330  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   933       9340  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000019a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   934       9350  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   935       9360  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   936       9370  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   937       9380  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=3700000037 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   938       9390  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   939       9400  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   940       9410  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000030 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   941       9420  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   942       9430  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000019b .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   943       9440  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   944       9450  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   945       9460  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   946       9470  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   947       9480  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   948       9490  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   949       9500  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   950       9510  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000019b .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   951       9520  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   952       9530  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   953       9540  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   954       9550  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=5f0000005f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   955       9560  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   956       9570  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   957       9580  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000037 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   958       9590  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   959       9600  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000019c .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   960       9610  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   961       9620  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   962       9630  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   963       9640  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   964       9650  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   965       9660  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   966       9670  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   967       9680  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000019c .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   968       9690  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   969       9700  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   970       9710  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   971       9720  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6300000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   972       9730  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   973       9740  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   974       9750  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000005f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   975       9760  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   976       9770  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000019d .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   977       9780  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   978       9790  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   979       9800  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   980       9810  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   981       9820  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   982       9830  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   983       9840  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   984       9850  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000019d .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   985       9860  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   986       9870  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   987       9880  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   988       9890  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6200000062 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   989       9900  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   990       9910  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   991       9920  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000063 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   992       9930  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   993       9940  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000019e .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+   994       9950  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   995       9960  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   996       9970  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   997       9980  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+   998       9990  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=6f62635f37307420 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+   999      10000  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1000      10010  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1001      10020  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000019e .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1002      10030  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1003      10040  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1004      10050  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1005      10060  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=6f0000006f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1006      10070  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1007      10080  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1008      10090  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=101000000000062 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1009      10100  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1010      10110  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=8000019f .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+  1011      10120  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1012      10130  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1013      10140  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1014      10150  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1015      10160  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=74204c494146000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1016      10170  PC=80000102  00050763  (버블/플러시)                            InstrD=58000ef HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1017      10180  PC=80000104  00513023  (버블/플러시)                            InstrD=1010029b HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1018      10190  PC=80000106  058000ef  jal ra,8000015e <report_putchar>    InstrD=3029293 HADDR=0 HWDATA=8000019f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1019      10200  PC=8000015e  1010029b  addiw t0,zero,257                   InstrD=a2e2b3 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1020      10210  PC=80000162  03029293  (버블/플러시)                            InstrD=1317 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1021      10220  PC=80000164  00a2e2b3  or t0,t0,a0                         InstrD=e9830313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1022      10230  PC=80000168  00001317  auipc t1,0x1                        InstrD=533023 HADDR=0 HWDATA=a0000000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1023      10240  PC=8000016c  e9830313  addi t1,t1,-360                     InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1024      10250  PC=80000170  00533023  sd t0,0(t1)                         InstrD=13283 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1025      10260  PC=80000174  00008067  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=10100000000006f .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1026      10270  PC=8000010a  00013283  (버블/플러시)                            InstrD=128293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1027      10280  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=800001a0 .HWRITE *HREADY .DCacheMiss .DCacheAccess *StallM
+  1028      10290  PC=8000010c  00000013  (버블/플러시)                            InstrD=ff1ff06f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1029      10300  PC=8000010c  00128293  (버블/플러시)                            InstrD=2c503 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1030      10310  PC=8000010e  ff1ff06f  (버블/플러시)                            InstrD=50763 HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1031      10320  PC=800000fe  0002c503  lbu a0,0(t0)                        InstrD=50763 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1032      10330  PC=80000102  00000013  (버블/플러시)                            InstrD=513023 HADDR=0 HWDATA=74204c494146000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1033      10340  PC=80000102  00050763  (버블/플러시)                            InstrD=13 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1034      10350  PC=80000104  00000013  (버블/플러시)                            InstrD=813083 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1035      10360  PC=00000000  00000013                                      InstrD=1010113 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1036      10370  PC=80000110  00813083  (버블/플러시)                            InstrD=8067 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1037      10380  PC=80000112  01010113  (버블/플러시)                            InstrD=1297 HADDR=0 HWDATA=800000c4 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1038      10390  PC=80000114  00008067  (버블/플러시)                            InstrD=f3c28293 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1039      10400  PC=800000c4  00001297  auipc t0,0x1                        InstrD=100313 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1040      10410  PC=800000c8  f3c28293  addi t0,t0,-196                     InstrD=62b023 HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1041      10420  PC=800000cc  00100313  addi t1,zero,1                      InstrD=6f HADDR=0 HWDATA=a0a0a0a0a0a0a0a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1042      10430  PC=800000d0  0062b023  sd t1,0(t0)                         InstrD=517 HADDR=0 HWDATA=c4c4c4c4c4c4c4c4 .HWRITE *HREADY .DCacheMiss *DCacheAccess .StallM
+  1043      10440  PC=800000d4  0000006f  jal zero,800000d4 <rvtest_entry_point+0xd4>  InstrD=13 HADDR=0 HWDATA=10100000000000a .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1044      10450  PC=800000d8  00000013  (버블/플러시)                            InstrD=6f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1045      10460  PC=00000000  00000013                                      InstrD=6f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1046      10470  PC=800000d4  0000006f  jal zero,800000d4 <rvtest_entry_point+0xd4>  InstrD=6f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM
+  1047      10480  PC=800000d4  0000006f  jal zero,800000d4 <rvtest_entry_point+0xd4>  InstrD=6f HADDR=0 HWDATA=0 .HWRITE *HREADY .DCacheMiss .DCacheAccess .StallM

@@ -1,0 +1,14 @@
+Config=rv64gc test=t03_trap_t03_trap elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t03_trap_t03_trap
+Running 1 test 
+REPORT direct_ecall_cycles=29
+REPORT direct_illegal_cycles=19
+REPORT vectored_mode_ecall_cycles=19
+REPORT vectored_mode_illegal_cycles=19
+PASS t03_trap
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t03_trap/t03_trap.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 31ns; walltime 0.787 s; speed 38.747 ns/s
+- Verilator: cpu 0.684 s on 1 threads; allocated 266 MB

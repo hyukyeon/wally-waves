@@ -1,0 +1,46 @@
+.include "common/report.inc"
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+  la t0, timer_handler
+  csrw mtvec, t0
+  li t0, 0x80
+  csrw mie, t0
+
+  li t0, 0x0200bff8
+  ld t1, 0(t0)
+  li t2, 10000
+  add t1, t1, t2
+  li t0, 0x02004000
+  sd t1, 0(t0)
+
+  rdcycle s0
+  csrsi mstatus, 8
+wfi_instruction:
+  wfi
+after_wfi:
+  rdcycle s1
+  sub s2, s1, s0
+  REPORT_U64 timer_mcause, s4
+  REPORT_U64 timer_mepc, s3
+  REPORT_U64 wfi_interrupt_cycles, s2
+  li t0, 1
+  slli t0, t0, 63
+  ori t0, t0, 7
+  bne s4, t0, fail
+  la t0, after_wfi
+  bne s3, t0, fail
+  TEST_PASS t04_interrupt
+fail:
+  TEST_FAIL t04_interrupt
+
+.align 2
+timer_handler:
+  csrr s3, mepc
+  csrr s4, mcause
+  li t0, 0x80
+  csrc mie, t0
+  mret

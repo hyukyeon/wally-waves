@@ -1,0 +1,53 @@
+.include "common/report.inc"
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+  rdcycle s0
+  la t0, cbo_line
+  andi t1, t0, 63
+  bnez t1, fail
+  li t1, -1
+  sd t1, 0(t0)
+  sd t1, 8(t0)
+  sd t1, 16(t0)
+  sd t1, 24(t0)
+  sd t1, 32(t0)
+  sd t1, 40(t0)
+  sd t1, 48(t0)
+  sd t1, 56(t0)
+
+  cbo.clean 0(t0)
+  cbo.flush 0(t0)
+  cbo.inval 0(t0)
+  cbo.zero 0(t0)
+
+  ld t1, 0(t0)
+  bnez t1, fail
+  ld t1, 8(t0)
+  bnez t1, fail
+  ld t1, 16(t0)
+  bnez t1, fail
+  ld t1, 24(t0)
+  bnez t1, fail
+  ld t1, 32(t0)
+  bnez t1, fail
+  ld t1, 40(t0)
+  bnez t1, fail
+  ld t1, 48(t0)
+  bnez t1, fail
+  ld t1, 56(t0)
+  bnez t1, fail
+  rdcycle s1
+  sub s2, s1, s0
+  REPORT_U64 cbo_sequence_cycles, s2
+  TEST_PASS t07_cbo
+fail:
+  TEST_FAIL t07_cbo
+
+.section .bss
+.align 6
+cbo_line:
+  .space 64

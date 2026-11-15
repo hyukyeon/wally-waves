@@ -1,0 +1,42 @@
+.include "common/report.inc"
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+  li t0, 32
+warmup:
+  addi t0, t0, -1
+  bnez t0, warmup
+
+  li t0, 128
+  rdcycle s0
+predictable:
+  addi t0, t0, -1
+  bnez t0, predictable
+  rdcycle s1
+  sub s2, s1, s0
+  REPORT_U64 predictable_loop_cycles, s2
+
+  li t0, 128
+  li t1, 0
+  rdcycle s3
+alternating:
+  addi t0, t0, -1
+  andi t2, t0, 1
+  beqz t2, even_path
+  addi t1, t1, 1
+  j branch_done
+even_path:
+  addi t1, t1, 2
+branch_done:
+  bnez t0, alternating
+  rdcycle s4
+  sub s5, s4, s3
+  li t3, 192
+  bne t1, t3, fail
+  REPORT_U64 alternating_branch_cycles, s5
+  TEST_PASS t02_branch
+fail:
+  TEST_FAIL t02_branch

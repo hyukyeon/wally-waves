@@ -1,0 +1,12 @@
+Config=rv64gc test=t02_branch_t02_branch elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t02_branch_t02_branch
+Running 1 test 
+REPORT predictable_loop_cycles=283
+REPORT alternating_branch_cycles=733
+PASS t02_branch
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t02_branch/t02_branch.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 29ns; walltime 0.690 s; speed 41.456 ns/s
+- Verilator: cpu 0.595 s on 1 threads; allocated 266 MB

@@ -1,0 +1,36 @@
+.include "common/report.inc"
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  rdcycle s0
+  li t0, 7
+  addi t1, t0, 9
+  add t2, t1, t0
+  rdcycle s1
+  sub s2, s1, s0
+  li t3, 23
+  bne t2, t3, fail
+  REPORT_U64 alu_forward_cycles, s2
+
+  la t0, load_value
+  rdcycle s3
+  ld t1, 0(t0)
+  addi t2, t1, 5
+  rdcycle s4
+  sub s5, s4, s3
+  li t3, 42
+  bne t2, t3, fail
+  REPORT_U64 load_use_cycles, s5
+
+  TEST_PASS t01_pipeline
+fail:
+  TEST_FAIL t01_pipeline
+
+.section .data
+.align 3
+load_value:
+  .dword 37

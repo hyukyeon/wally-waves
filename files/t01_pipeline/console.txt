@@ -1,0 +1,12 @@
+Config=rv64gc test=t01_pipeline_t01_pipeline elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t01_pipeline_t01_pipeline
+Running 1 test 
+REPORT alu_forward_cycles=4
+REPORT load_use_cycles=14
+PASS t01_pipeline
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t01_pipeline/t01_pipeline.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 15ns; walltime 0.427 s; speed 34.872 ns/s
+- Verilator: cpu 0.326 s on 1 threads; allocated 266 MB

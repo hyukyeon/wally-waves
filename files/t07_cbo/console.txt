@@ -1,0 +1,11 @@
+Config=rv64gc test=t07_cbo_t07_cbo elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t07_cbo_t07_cbo
+Running 1 test 
+REPORT cbo_sequence_cycles=85
+PASS t07_cbo
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t07_cbo/t07_cbo.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 10ns; walltime 0.334 s; speed 31.353 ns/s
+- Verilator: cpu 0.238 s on 1 threads; allocated 266 MB

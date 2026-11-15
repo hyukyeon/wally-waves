@@ -1,0 +1,111 @@
+
+tests/t01_pipeline/t01_pipeline.elf:     file format elf64-littleriscv
+
+
+Disassembly of section .text:
+
+0000000080000000 <rvtest_entry_point>:
+    80000000:	00007117          	auipc	sp,0x7
+    80000004:	00010113          	addi	sp,sp,0 # 80007000 <_end>
+    80000008:	c0002473          	csrrs	s0,cycle,zero
+    8000000c:	00700293          	addi	t0,zero,7
+    80000010:	00928313          	addi	t1,t0,9
+    80000014:	005303b3          	add	t2,t1,t0
+    80000018:	c00024f3          	csrrs	s1,cycle,zero
+    8000001c:	40848933          	sub	s2,s1,s0
+    80000020:	01700e13          	addi	t3,zero,23
+    80000024:	09c39463          	bne	t2,t3,800000ac <fail>
+    80000028:	00000517          	auipc	a0,0x0
+    8000002c:	12250513          	addi	a0,a0,290 # 8000014a <report_putchar+0x18>
+    80000030:	09c000ef          	jal	ra,800000cc <report_print_string>
+    80000034:	00090513          	addi	a0,s2,0
+    80000038:	0b2000ef          	jal	ra,800000ea <report_print_u64>
+    8000003c:	00000517          	auipc	a0,0x0
+    80000040:	12950513          	addi	a0,a0,297 # 80000165 <report_putchar+0x33>
+    80000044:	088000ef          	jal	ra,800000cc <report_print_string>
+    80000048:	00004297          	auipc	t0,0x4
+    8000004c:	fb828293          	addi	t0,t0,-72 # 80004000 <load_value>
+    80000050:	c00029f3          	csrrs	s3,cycle,zero
+    80000054:	0002b303          	ld	t1,0(t0)
+    80000058:	00530393          	addi	t2,t1,5
+    8000005c:	c0002a73          	csrrs	s4,cycle,zero
+    80000060:	413a0ab3          	sub	s5,s4,s3
+    80000064:	02a00e13          	addi	t3,zero,42
+    80000068:	05c39263          	bne	t2,t3,800000ac <fail>
+    8000006c:	00000517          	auipc	a0,0x0
+    80000070:	0fb50513          	addi	a0,a0,251 # 80000167 <report_putchar+0x35>
+    80000074:	058000ef          	jal	ra,800000cc <report_print_string>
+    80000078:	000a8513          	addi	a0,s5,0
+    8000007c:	06e000ef          	jal	ra,800000ea <report_print_u64>
+    80000080:	00000517          	auipc	a0,0x0
+    80000084:	0ff50513          	addi	a0,a0,255 # 8000017f <report_putchar+0x4d>
+    80000088:	044000ef          	jal	ra,800000cc <report_print_string>
+    8000008c:	00000517          	auipc	a0,0x0
+    80000090:	0f550513          	addi	a0,a0,245 # 80000181 <report_putchar+0x4f>
+    80000094:	038000ef          	jal	ra,800000cc <report_print_string>
+    80000098:	00001297          	auipc	t0,0x1
+    8000009c:	f6828293          	addi	t0,t0,-152 # 80001000 <tohost>
+    800000a0:	00100313          	addi	t1,zero,1
+    800000a4:	0062b023          	sd	t1,0(t0)
+    800000a8:	0000006f          	jal	zero,800000a8 <rvtest_entry_point+0xa8>
+
+00000000800000ac <fail>:
+    800000ac:	00000517          	auipc	a0,0x0
+    800000b0:	0e850513          	addi	a0,a0,232 # 80000194 <report_putchar+0x62>
+    800000b4:	018000ef          	jal	ra,800000cc <report_print_string>
+    800000b8:	00001297          	auipc	t0,0x1
+    800000bc:	f4828293          	addi	t0,t0,-184 # 80001000 <tohost>
+    800000c0:	00300313          	addi	t1,zero,3
+    800000c4:	0062b023          	sd	t1,0(t0)
+    800000c8:	0000006f          	jal	zero,800000c8 <fail+0x1c>
+
+00000000800000cc <report_print_string>:
+    800000cc:	1141                	c.addi	sp,-16
+    800000ce:	e406                	c.sdsp	ra,8(sp)
+    800000d0:	82aa                	c.mv	t0,a0
+    800000d2:	0002c503          	lbu	a0,0(t0)
+    800000d6:	c519                	c.beqz	a0,800000e4 <report_print_string+0x18>
+    800000d8:	e016                	c.sdsp	t0,0(sp)
+    800000da:	058000ef          	jal	ra,80000132 <report_putchar>
+    800000de:	6282                	c.ldsp	t0,0(sp)
+    800000e0:	0285                	c.addi	t0,1
+    800000e2:	bfc5                	c.j	800000d2 <report_print_string+0x6>
+    800000e4:	60a2                	c.ldsp	ra,8(sp)
+    800000e6:	0141                	c.addi	sp,16
+    800000e8:	8082                	c.jr	ra
+
+00000000800000ea <report_print_u64>:
+    800000ea:	1141                	c.addi	sp,-16
+    800000ec:	e406                	c.sdsp	ra,8(sp)
+    800000ee:	00005397          	auipc	t2,0x5
+    800000f2:	f1238393          	addi	t2,t2,-238 # 80005000 <report_number_buffer>
+    800000f6:	03d1                	c.addi	t2,20
+    800000f8:	4e29                	c.li	t3,10
+    800000fa:	03c57eb3          	remu	t4,a0,t3
+    800000fe:	03c55533          	divu	a0,a0,t3
+    80000102:	030e8e93          	addi	t4,t4,48
+    80000106:	13fd                	c.addi	t2,-1
+    80000108:	01d38023          	sb	t4,0(t2)
+    8000010c:	f57d                	c.bnez	a0,800000fa <report_print_u64+0x10>
+    8000010e:	00005f17          	auipc	t5,0x5
+    80000112:	ef2f0f13          	addi	t5,t5,-270 # 80005000 <report_number_buffer>
+    80000116:	0f51                	c.addi	t5,20
+    80000118:	01e38a63          	beq	t2,t5,8000012c <report_print_u64+0x42>
+    8000011c:	0003c503          	lbu	a0,0(t2)
+    80000120:	e01e                	c.sdsp	t2,0(sp)
+    80000122:	010000ef          	jal	ra,80000132 <report_putchar>
+    80000126:	6382                	c.ldsp	t2,0(sp)
+    80000128:	0385                	c.addi	t2,1
+    8000012a:	b7fd                	c.j	80000118 <report_print_u64+0x2e>
+    8000012c:	60a2                	c.ldsp	ra,8(sp)
+    8000012e:	0141                	c.addi	sp,16
+    80000130:	8082                	c.jr	ra
+
+0000000080000132 <report_putchar>:
+    80000132:	1010029b          	addiw	t0,zero,257
+    80000136:	12c2                	c.slli	t0,0x30
+    80000138:	00a2e2b3          	or	t0,t0,a0
+    8000013c:	00001317          	auipc	t1,0x1
+    80000140:	ec430313          	addi	t1,t1,-316 # 80001000 <tohost>
+    80000144:	00533023          	sd	t0,0(t1)
+    80000148:	8082                	c.jr	ra

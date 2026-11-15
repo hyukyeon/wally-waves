@@ -1,0 +1,222 @@
+[
+ {
+  "name": "t01_pipeline",
+  "stem": "t01_pipeline",
+  "variant": "",
+  "title": "데이터 해저드, 포워딩, load-use 정지",
+  "result": "PASS",
+  "fst_size": 533862,
+  "vcd_size": null,
+  "mtime": 1791981063,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "Forwarding",
+   "Stall / Flush"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "ALU 결과 포워딩 — add 결과를 바로 다음 명령이 쓴다. ForwardedSrcAE/BE 로 값이 전달됨."
+   },
+   {
+    "ns": [
+     2
+    ],
+    "desc": "load-use 정지 — lbu 결과를 다음 명령이 쓰려 하면 LoadStallD 가 1 사이클 이상 올라가 파이프라인이 멈춘다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t02_branch",
+  "stem": "t02_branch",
+  "variant": "",
+  "title": "분기 예측 hit/miss 패널티 (mcycle)",
+  "result": "PASS",
+  "fst_size": 768781,
+  "vcd_size": null,
+  "mtime": 1791981065,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "분기 (Decode / Execute)",
+   "예측 실패"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "분기 예측 실패 — warm-up 루프의 분기가 BPWrongE 로 잡히고, 이후 BPWrongM 으로 전파된다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t03_trap",
+  "stem": "t03_trap",
+  "variant": "",
+  "title": "ecall, 불법 명령 트랩 (direct/vectored)",
+  "result": "PASS",
+  "fst_size": 868753,
+  "vcd_size": null,
+  "mtime": 1791981067,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "Trap",
+   "CSR"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "ecall 트랩 — ecall 이 M 단계에서 TrapM 을 올리고 CauseM 이 0xb(환경 호출)가 된다. 뒤이어 MEPC_REGW 에 ecall 주소가 기록된다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t04_interrupt",
+  "stem": "t04_interrupt",
+  "variant": "",
+  "title": "CLINT 타이머 인터럽트와 WFI",
+  "result": "PASS",
+  "fst_size": 1156091,
+  "vcd_size": null,
+  "mtime": 1791981071,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "인터럽트 입력",
+   "Trap / WFI"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "WFI 진입 — wfi 가 실행되면 wfiM 이 올라가고 파이프라인이 멈춘 채 기다린다."
+   },
+   {
+    "ns": [
+     2
+    ],
+    "desc": "타이머 인터럽트 진입 — MTIME 이 비교값에 닿아 MTimerInt 가 올라가면 IntPendingM, TrapM 이 올라가고 mcause=7 로 트랩한다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t05_zicond_zb",
+  "stem": "t05_zicond_zb",
+  "variant": "",
+  "title": "Zicond, Zba/Zbb 명령",
+  "result": "PASS",
+  "fst_size": 450515,
+  "vcd_size": null,
+  "mtime": 1791981072,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "Forwarding"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "czero.eqz — Zicond 명령이 조건 0 일 때 값을 0 으로 만든다."
+   },
+   {
+    "ns": [
+     2
+    ],
+    "desc": "sh1add / andn / clz — Zba, Zbb 명령이 실행되는 구간. 앞 명령 결과가 ForwardAE/BE 로 바로 전달된다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t06_mmu",
+  "stem": "t06_mmu",
+  "variant": "",
+  "title": "Sv39 페이지 테이블과 페이지 폴트",
+  "result": "PASS",
+  "fst_size": 541825,
+  "vcd_size": null,
+  "mtime": 1791981073,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "Trap / 권한",
+   "TLB / 페이지 테이블"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "TLB 미스와 페이지 폴트 — PrivilegeModeW 가 3(M)에서 1(S)로 바뀐 뒤 ITLBMissOrUpdateAF 가 올라간다. 그 뒤 HADDR 이 페이지 테이블 주소(0x80004000 근처)로 바뀌며 HPTW 가 읽는다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t07_cbo",
+  "stem": "t07_cbo",
+  "variant": "",
+  "title": "Zicbom/Zicboz 캐시 블록 명령",
+  "result": "PASS",
+  "fst_size": 464834,
+  "vcd_size": null,
+  "mtime": 1791981074,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "버스 (AHB)",
+   "캐시 / 정지"
+  ],
+  "marks": [
+   {
+    "ns": [
+     1
+    ],
+    "desc": "cbo.clean / cbo.flush — 캐시 블록 명령이 DCacheMiss 를 올리고, 실행 동안 StallM 이 유지된다."
+   }
+  ],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ }
+]

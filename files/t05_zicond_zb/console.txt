@@ -1,0 +1,11 @@
+Config=rv64gc test=t05_zicond_zb_t05_zicond_zb elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t05_zicond_zb_t05_zicond_zb
+Running 1 test 
+REPORT zicond_zba_zbb_cycles=33
+PASS t05_zicond_zb
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t05_zicond_zb/t05_zicond_zb.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 11ns; walltime 0.347 s; speed 31.080 ns/s
+- Verilator: cpu 0.253 s on 1 threads; allocated 266 MB
