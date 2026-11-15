@@ -1,0 +1,14 @@
+Config=rv64gc test=t10_muldiv_t10_muldiv elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t10_muldiv_t10_muldiv
+Running 1 test 
+REPORT cycles_base=1
+REPORT cycles_add8=9
+REPORT cycles_mul8=9
+REPORT cycles_div=10
+PASS t10_muldiv
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t10_muldiv/t10_muldiv.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 23ns; walltime 0.570 s; speed 40.537 ns/s
+- Verilator: cpu 0.479 s on 1 threads; allocated 266 MB

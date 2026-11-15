@@ -1,0 +1,15 @@
+Config=rv64gc test=t12_amo_t12_amo elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t12_amo_t12_amo
+Running 1 test 
+REPORT cycles_base=1
+REPORT cycles_amoadd8=16
+REPORT cycles_ld8=9
+REPORT cycles_fence=5
+REPORT cycles_lrsc=3
+PASS t12_amo
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t12_amo/t12_amo.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 27ns; walltime 0.638 s; speed 42.153 ns/s
+- Verilator: cpu 0.546 s on 1 threads; allocated 266 MB

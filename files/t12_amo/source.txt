@@ -1,0 +1,146 @@
+.include "common/report.inc"
+
+# t12_amo: A 확장: AMO와 LR/SC, 펜스의 사이클 (강의 노트 17장 실습)
+# 1) AMO 결과: amoadd, amoswap(잠금 획득), amomin/amomax 의 부호 차이, amomaxu.
+# 2) LR/SC: 짝이 맞으면 성공(0), 예약이 없거나 주소가 다르면 실패(1).
+# 3) 사이클: 같은 주소에 amoadd 8개, 일반 ld 8개, fence 1개, lr/sc 한 쌍을 잰다.
+#    기준값은 rdcycle 두 번의 차이이고, 측정 구간은 두 번 돌려 두 번째 값을 쓴다.
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+  la s0, amo_var              # 검사에 쓰는 주소 (cacheable DRAM)
+  addi s1, s0, 8              # 두 번째 주소 (lr/sc 주소 불일치 검사용)
+
+  # ---- 1. AMO 결과 ----
+  li t0, 5
+  sd t0, 0(s0)
+  li t1, 2
+  amoadd.d a0, t1, (s0)       # rd = 옛 값 5, 메모리 = 5 + 2 = 7
+  ld a1, 0(s0)
+
+  sd zero, 0(s1)              # 잠금 변수 = 0
+  li t2, 1
+  amoswap.d a2, t2, (s1)      # 첫 번째 획득: 옛 값 0 (잠금을 얻음)
+  amoswap.d a3, t2, (s1)      # 두 번째 획득: 옛 값 1 (이미 잠겨 있음)
+
+  li t3, -5
+  sd t3, 0(s0)
+  li t4, 3
+  amomin.d a4, t4, (s0)       # rd = -5, 메모리 = min(-5, 3) = -5
+  amomax.d a5, t4, (s0)       # rd = -5, 메모리 = max(-5, 3) = 3
+  li t5, -1                   # 부호 없이 보면 가장 큰 값
+  amomaxu.d a6, t5, (s0)      # rd = 3, 메모리 = maxu(3, 0xFFFF...) = -1
+
+  li t5, 5
+  bne a0, t5, fail
+  li t5, 7
+  bne a1, t5, fail
+  li t5, 0
+  bne a2, t5, fail
+  li t5, 1
+  bne a3, t5, fail
+  li t5, -5
+  bne a4, t5, fail
+  li t5, -5
+  bne a5, t5, fail
+  li t5, 3
+  bne a6, t5, fail
+  ld t0, 0(s0)
+  li t5, -1
+  bne t0, t5, fail
+  ld t0, 0(s1)
+  li t5, 1
+  bne t0, t5, fail
+
+  # ---- 2. LR/SC ----
+  li t0, 100
+  sd t0, 0(s0)
+  lr.d a0, (s0)               # 예약 설정, a0 = 100
+  li t1, 200
+  sc.d a1, t1, (s0)           # 예약이 맞음 -> 성공 (rd = 0), 메모리 = 200
+  ld a2, 0(s0)
+  sc.d a3, t1, (s0)           # 예약이 이미 사라짐 -> 실패 (rd = 1), 메모리는 그대로
+  ld a4, 0(s0)
+  lr.d a5, (s0)               # 다시 예약
+  sc.d a6, t1, (s1)           # 주소가 다름 -> 실패 (rd = 1)
+  li t5, 100
+  bne a0, t5, fail
+  li t5, 0
+  bne a1, t5, fail
+  li t5, 200
+  bne a2, t5, fail
+  li t5, 1
+  bne a3, t5, fail
+  li t5, 200
+  bne a4, t5, fail
+  li t5, 1
+  bne a6, t5, fail
+
+  # ---- 3. 사이클 측정 (두 번 돌린다: 첫 실행은 캐시와 명령 캐시를 채운다) ----
+  li t6, 2
+loopT:
+  rdcycle s2
+  rdcycle s3
+  sub s4, s3, s2              # 기준: rdcycle 두 번의 차이
+
+  rdcycle s2
+  amoadd.d a0, t1, (s0)
+  amoadd.d a1, t1, (s0)
+  amoadd.d a2, t1, (s0)
+  amoadd.d a3, t1, (s0)
+  amoadd.d a4, t1, (s0)
+  amoadd.d a5, t1, (s0)
+  amoadd.d a6, t1, (s0)
+  amoadd.d a7, t1, (s0)
+  rdcycle s3
+  sub s5, s3, s2              # 같은 주소 amoadd 8개
+
+  rdcycle s2
+  ld a0, 0(s0)
+  ld a1, 0(s0)
+  ld a2, 0(s0)
+  ld a3, 0(s0)
+  ld a4, 0(s0)
+  ld a5, 0(s0)
+  ld a6, 0(s0)
+  ld a7, 0(s0)
+  rdcycle s3
+  sub s7, s3, s2              # 일반 ld 8개 (같은 주소)
+
+  rdcycle s2
+  fence
+  rdcycle s3
+  sub s8, s3, s2              # fence 1개
+
+  rdcycle s2
+  lr.d a0, (s0)
+  sc.d a1, t1, (s0)
+  rdcycle s3
+  sub s9, s3, s2              # lr/sc 한 쌍 (성공)
+
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  # 측정값 보고 (REPORT 는 t0-t5 를 쓰므로 값은 t3 로 옮긴다)
+  mv t3, s4
+  REPORT_U64 cycles_base, t3
+  mv t3, s5
+  REPORT_U64 cycles_amoadd8, t3
+  mv t3, s7
+  REPORT_U64 cycles_ld8, t3
+  mv t3, s8
+  REPORT_U64 cycles_fence, t3
+  mv t3, s9
+  REPORT_U64 cycles_lrsc, t3
+
+  TEST_PASS t12_amo
+fail:
+  TEST_FAIL t12_amo
+
+.section .bss
+.align 6
+amo_var:
+  .space 64

@@ -296,5 +296,67 @@
    "console",
    "dump"
   ]
+ },
+ {
+  "name": "t10_muldiv",
+  "stem": "t10_muldiv",
+  "variant": "",
+  "title": "M 확장: 곱셈과 나눗셈의 결과와 사이클",
+  "result": "PASS",
+  "fst_size": 826614,
+  "vcd_size": null,
+  "mtime": 1794751635,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "정지 신호 (StallE/StallM, 나눗셈 busy)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t11_fp",
+  "stem": "t11_fp",
+  "variant": "",
+  "title": "F/D 부동소수점: 결과, 플래그, 사이클",
+  "result": "PASS",
+  "fst_size": 2413369,
+  "vcd_size": null,
+  "mtime": 1794752316,
+  "groups": [
+   "Pipeline (PC / 명령)",
+   "나눗셈기 busy / 정지"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
+ },
+ {
+  "name": "t12_amo",
+  "stem": "t12_amo",
+  "variant": "",
+  "title": "A 확장: AMO와 LR/SC, 펜스의 사이클",
+  "result": "PASS",
+  "fst_size": 873271,
+  "vcd_size": null,
+  "mtime": 1794752464,
+  "groups": [
+   "Pipeline (PC / 명령)"
+  ],
+  "marks": [],
+  "files": [
+   "source",
+   "objdump",
+   "console",
+   "dump"
+  ]
  }
 ]

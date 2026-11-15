@@ -1,0 +1,149 @@
+.include "common/report.inc"
+
+# t10_muldiv: M 확장: 곱셈과 나눗셈의 결과와 사이클 (강의 노트 15장 실습)
+# 1) 곱셈 네 종류(mul, mulh, mulhu, mulhsu)의 결과를 검사한다.
+# 2) 나눗셈 규칙(0 쪽으로 버림, 0으로 나눔, 오버플로)과 W 형식(mulw, divw)을 검사한다.
+# 3) 사이클: 독립 add 8개, 독립 mul 8개, div 1개(결과를 바로 씀)를 rdcycle 로 잰다.
+#    기준값은 rdcycle 두 번의 차이다.
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  # ---- 1. 곱셈 결과 ----
+  li t0, -1
+  li t1, -1
+  mul   a0, t0, t1            # (-1)*(-1) 하위 64비트 = 1
+  mulh  a1, t0, t1            # 부호 있음*부호 있음, 상위 64비트 = 0
+  mulhu a2, t0, t1            # (2^64-1)^2 상위 64비트 = 0xFFFFFFFFFFFFFFFE
+  li t2, 15
+  mulhsu a3, t0, t2           # (-1)*15 = -15, 상위 64비트 = -1
+  mulhsu a4, t0, t0           # (-1)*(2^64-1) = -2^64+1, 상위 64비트 = -1
+  li t3, 3
+  li t4, 5
+  mul   a5, t3, t4            # 15
+
+  li t5, 1
+  bne a0, t5, fail
+  li t5, 0
+  bne a1, t5, fail
+  li t5, -2
+  bne a2, t5, fail
+  li t5, -1
+  bne a3, t5, fail
+  bne a4, t5, fail
+  li t5, 15
+  bne a5, t5, fail
+
+  # ---- 2. 나눗셈 규칙 ----
+  li t0, -13
+  li t1, 2
+  div  a0, t0, t1             # -13 / 2 = -6 (0 쪽으로 버림)
+  rem  a1, t0, t1             # 나머지 = -1 (피제수 부호)
+  li t2, 13
+  divu a2, t2, t1             # 13 / 2 = 6
+  remu a3, t2, t1             # 1
+  li t3, -2
+  div  a4, t2, t3             # 13 / (-2) = -6
+  rem  a5, t2, t3             # 1
+  li t4, 0
+  div  a6, t2, t4             # 0 으로 나눔: 몫 = -1 (모든 비트 1)
+  rem  a7, t2, t4             # 0 으로 나눔: 나머지 = 피제수 13
+  li s1, 0x8000000000000000   # INT64_MIN
+  li s2, -1
+  div  s3, s1, s2             # 오버플로: 몫 = INT64_MIN
+  rem  s4, s1, s2             # 오버플로: 나머지 = 0
+
+  li t5, -6
+  bne a0, t5, fail
+  li t5, -1
+  bne a1, t5, fail
+  li t5, 6
+  bne a2, t5, fail
+  li t5, 1
+  bne a3, t5, fail
+  li t5, -6
+  bne a4, t5, fail
+  li t5, 1
+  bne a5, t5, fail
+  li t5, -1
+  bne a6, t5, fail
+  li t5, 13
+  bne a7, t5, fail
+  li t5, 0x8000000000000000
+  bne s3, t5, fail
+  li t5, 0
+  bne s4, t5, fail
+
+  # ---- 2b. W 형식 (32비트 결과를 부호 확장) ----
+  li t0, 0x7fffffff
+  li t1, 2
+  mulw s5, t0, t1             # 0x7fffffff*2 = 0xfffffffe, 부호 확장 = -2
+  li t2, -13
+  li t3, 2
+  divw s6, t2, t3             # -6
+  li t5, -2
+  bne s5, t5, fail
+  li t5, -6
+  bne s6, t5, fail
+
+  # ---- 3. 사이클 측정 ----
+  # 두 번 돌린다. 첫 번째 실행은 명령 캐시를 채우는 데 쓰고(미스로 정지가 섞임),
+  # 두 번째 실행의 값만 보고한다. 그래야 곱셈기 자체의 사이클이 보인다.
+  li t6, 2
+loopT:
+  rdcycle s0
+  rdcycle s1
+  sub s7, s1, s0              # 기준: rdcycle 두 번의 차이
+
+  li t0, 7
+  li t1, 9
+  rdcycle s0
+  add a0, t0, t1
+  add a1, t0, t1
+  add a2, t0, t1
+  add a3, t0, t1
+  add a4, t0, t1
+  add a5, t0, t1
+  add a6, t0, t1
+  add a7, t0, t1
+  rdcycle s1
+  sub s8, s1, s0              # 독립 add 8개
+
+  rdcycle s0
+  mul a0, t0, t1
+  mul a1, t0, t1
+  mul a2, t0, t1
+  mul a3, t0, t1
+  mul a4, t0, t1
+  mul a5, t0, t1
+  mul a6, t0, t1
+  mul a7, t0, t1
+  rdcycle s1
+  sub s9, s1, s0              # 독립 mul 8개
+
+  li t0, 0x123456789abcdef0
+  li t1, 0x1234567
+  rdcycle s0
+  div  a0, t0, t1             # div 1개 + 바로 쓰는 명령 1개
+  add  a1, a0, zero
+  rdcycle s1
+  sub s10, s1, s0             # div 1개 (결과를 바로 씀)
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  # 측정값 보고 (REPORT 는 t0-t5 를 쓰므로 값은 t3 로 옮긴다)
+  mv t3, s7
+  REPORT_U64 cycles_base, t3
+  mv t3, s8
+  REPORT_U64 cycles_add8, t3
+  mv t3, s9
+  REPORT_U64 cycles_mul8, t3
+  mv t3, s10
+  REPORT_U64 cycles_div, t3
+
+  TEST_PASS t10_muldiv
+fail:
+  TEST_FAIL t10_muldiv

@@ -1,0 +1,185 @@
+.include "common/report.inc"
+
+# t11_fp: F/D 부동소수점: 결과, 플래그, 사이클 (강의 노트 16장 실습)
+# 1) 덧셈, 곱셈, FMA, 나눗셈, 제곱근의 비트 패턴을 검사한다 (기대값은 손으로 계산).
+# 2) 정수 변환의 반올림 모드(RTZ, RNE, RUP)와 비교(flt, feq)를 검사한다.
+# 3) 예외 플래그: 0으로 나눔은 DZ(0x08), 음수의 제곱근은 NV(0x10)만 올라간다.
+# 4) 사이클: 독립 fadd 8개, 의존 fadd 8개(연쇄), fdiv 1개와 그 결과를 쓰는 fadd.
+#    측정은 두 번 돌려 두 번째 값을 보고한다(첫 실행은 명령 캐시 미스가 섞인다).
+
+.section .text.init
+.option norvc
+.globl rvtest_entry_point
+rvtest_entry_point:
+  la sp, study_stack_top
+
+  # FP 명령은 mstatus.FS 가 0이면 불법 명령이 된다. FS 를 11(Dirty)로 켠다 (비트 13-14).
+  li t0, 0x6000
+  csrs mstatus, t0
+
+  # 입력 준비: f8 = 1.5, f9 = 2.25, f11 = 1.625, f12 = 1.0, f13 = 3.0, f14 = 4.0
+  li t0, 0x3FF8000000000000   # 1.5
+  fmv.d.x f8, t0
+  li t0, 0x4002000000000000   # 2.25
+  fmv.d.x f9, t0
+  li t0, 0x3FFA000000000000   # 1.625
+  fmv.d.x f11, t0
+  li t0, 0x3FF0000000000000   # 1.0
+  fmv.d.x f12, t0
+  li t0, 0x4008000000000000   # 3.0
+  fmv.d.x f13, t0
+  li t0, 0x4010000000000000   # 4.0
+  fmv.d.x f14, t0
+
+  csrw fflags, zero
+
+  # ---- 1. 결과 비트 패턴 ----
+  fadd.d f1, f8, f9           # 1.5 + 2.25 = 3.75 = 0x400E000000000000
+  fmv.x.d a0, f1
+  fmul.d f2, f8, f11          # 1.5 * 1.625 = 2.4375
+  fmadd.d f3, f8, f11, f12    # 1.5 * 1.625 + 1.0 = 3.4375 = 0x400B800000000000
+  fmv.x.d a1, f3
+  fdiv.d f4, f12, f13         # 1.0 / 3.0 = 0x3FD5555555555555 (RNE)
+  fmv.x.d a2, f4
+  fsqrt.d f5, f14             # sqrt(4.0) = 2.0 = 0x4000000000000000
+  fmv.x.d a3, f5
+  li t0, 0x3FC00000           # 단정도 1.5f (f21 은 단정도 값으로 따로 준비)
+  fmv.w.x f21, t0
+  li t0, 0x3FD00000           # 단정도 1.625f
+  fmv.w.x f22, t0
+  fmul.s f6, f21, f22         # 단정도: 1.5f * 1.625f = 2.4375f = 0x401C0000
+  fmv.x.w a4, f6              # 하위 32비트만 보면 된다
+  li t0, 0x400E000000000000
+  bne a0, t0, fail
+  li t0, 0x400B800000000000
+  bne a1, t0, fail
+  li t0, 0x3FD5555555555555
+  bne a2, t0, fail
+  li t0, 0x4000000000000000
+  bne a3, t0, fail
+  li t0, 0x401C0000
+  bne a4, t0, fail
+
+  # ---- 2. 정수 변환과 비교 ----
+  li t0, 0x4004000000000000   # 2.5
+  fmv.d.x f15, t0
+  fcvt.w.d a5, f15, rtz       # 2.5 -> 2 (0 쪽으로)
+  fcvt.w.d a6, f15, rne       # 2.5 -> 2 (짝수 쪽, 동점)
+  fcvt.w.d a7, f15, rup       # 2.5 -> 3 (+∞ 쪽)
+  li t5, 2
+  bne a5, t5, fail
+  bne a6, t5, fail
+  li t5, 3
+  bne a7, t5, fail
+
+  li t0, -7
+  fcvt.d.w f16, t0            # -7 -> -7.0 = 0xC01C000000000000
+  fmv.x.d s1, f16
+  li t5, 0xC01C000000000000
+  bne s1, t5, fail
+
+  flt.d s2, f12, f9           # 1.0 < 2.25 -> 1
+  feq.d s3, f12, f12          # 1.0 == 1.0 -> 1
+  li t5, 1
+  bne s2, t5, fail
+  bne s3, t5, fail
+
+  mv s9, a5                  # 보고 전에 보존 (REPORT 가 a 레지스터를 쓴다)
+  mv s10, a6
+  mv s11, a7
+  mv t3, s9
+  REPORT_U64 cvt_rtz, t3
+  mv t3, s10
+  REPORT_U64 cvt_rne, t3
+  mv t3, s11
+  REPORT_U64 cvt_rup, t3
+  mv t3, s1
+  REPORT_U64 dbg_dw, t3
+  mv t3, s2
+  REPORT_U64 dbg_flt, t3
+  mv t3, s3
+  REPORT_U64 dbg_feq, t3
+
+  # ---- 3. 예외 플래그 ----
+  fmv.d.x f0, zero            # f0 = +0.0
+  csrw fflags, zero
+  fdiv.d f17, f12, f0         # 1.0 / 0.0 = +∞, DZ 플래그
+  csrr s4, fflags
+  li t5, 0x08
+  bne s4, t5, fail
+  fmv.x.d s5, f17
+  li t5, 0x7FF0000000000000
+  bne s5, t5, fail
+
+  csrw fflags, zero
+  li t0, 0xBFF0000000000000   # -1.0
+  fmv.d.x f18, t0
+  fsqrt.d f19, f18            # sqrt(-1.0): 무효 연산, NV(0x10), 정규 NaN
+  csrr s6, fflags
+  li t5, 0x10
+  bne s6, t5, fail
+  fmv.x.d s7, f19
+  li t5, 0x7FF8000000000000
+  bne s7, t5, fail
+
+  # ---- 4. 사이클 측정 (두 번 돌려 두 번째 값을 쓴다) ----
+  li t6, 2
+loopT:
+  rdcycle s0
+  rdcycle s1
+  sub s8, s1, s0              # 기준: rdcycle 두 번의 차이
+
+  rdcycle s0
+  fadd.d f20, f8, f9          # 독립 fadd 8개
+  fadd.d f21, f8, f9
+  fadd.d f22, f8, f9
+  fadd.d f23, f8, f9
+  fadd.d f24, f8, f9
+  fadd.d f25, f8, f9
+  fadd.d f26, f8, f9
+  fadd.d f27, f8, f9
+  rdcycle s1
+  sub s9, s1, s0              # 독립 fadd 8개
+
+  rdcycle s0
+  fadd.d f20, f20, f8         # 의존 fadd 8개 (앞의 결과를 바로 씀)
+  fadd.d f20, f20, f8
+  fadd.d f20, f20, f8
+  fadd.d f20, f20, f8
+  fadd.d f20, f20, f8
+  fadd.d f20, f20, f8
+  fadd.d f20, f20, f8
+  fadd.d f20, f20, f8
+  rdcycle s1
+  sub s10, s1, s0             # 의존 fadd 8개
+
+  rdcycle s0
+  fdiv.d f28, f12, f13        # fdiv 1개
+  fadd.d f29, f28, f8         # 결과를 바로 씀
+  rdcycle s1
+  sub s11, s1, s0             # fdiv 1개 + 바로 쓰는 fadd
+
+  addi t6, t6, -1
+  bnez t6, loopT
+
+  mv t3, s4
+  REPORT_U64 dbg_fl_dz, t3
+  mv t3, s5
+  REPORT_U64 dbg_inf, t3
+  mv t3, s6
+  REPORT_U64 dbg_fl_nv, t3
+  mv t3, s7
+  REPORT_U64 dbg_nan, t3
+  # 측정값 보고 (REPORT 는 t0-t5 를 쓰므로 값은 t3 로 옮긴다)
+  mv t3, s8
+  REPORT_U64 cycles_base, t3
+  mv t3, s9
+  REPORT_U64 cycles_fadd8_indep, t3
+  mv t3, s10
+  REPORT_U64 cycles_fadd8_chain, t3
+  mv t3, s11
+  REPORT_U64 cycles_fdiv_use, t3
+
+  TEST_PASS t11_fp
+fail:
+  TEST_FAIL t11_fp

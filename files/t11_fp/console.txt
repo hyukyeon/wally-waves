@@ -1,0 +1,24 @@
+Config=rv64gc test=t11_fp_t11_fp elfs=1 sim=verilator gui=False args='' params='' define=''
+Running Verilator on rv64gc t11_fp_t11_fp
+Running 1 test 
+REPORT cvt_rtz=2
+REPORT cvt_rne=2
+REPORT cvt_rup=3
+REPORT dbg_dw=13842939354630062080
+REPORT dbg_flt=1
+REPORT dbg_feq=1
+REPORT dbg_fl_dz=8
+REPORT dbg_inf=9218868437227405312
+REPORT dbg_fl_nv=16
+REPORT dbg_nan=9221120237041090560
+REPORT cycles_base=1
+REPORT cycles_fadd8_indep=10
+REPORT cycles_fadd8_chain=17
+REPORT cycles_fdiv_use=12
+PASS t11_fp
+/home/hyukyeon/08_Wally/study/unit_tests/tests/t11_fp/t11_fp.elf succeeded.  Brilliant!!!
+SUCCESS! All tests ran without failures.
+- /home/hyukyeon/08_Wally/testbench/testbench.sv:405: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.052 2026-09-05
+- Verilator: $finish at 79ns; walltime 1.665 s; speed 47.486 ns/s
+- Verilator: cpu 1.569 s on 1 threads; allocated 266 MB
